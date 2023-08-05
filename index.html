@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<meta http-equiv="refresh" content="3;url=http://www.google.com/" />
+	<<script>
+	// For todays date;
+Date.prototype.today = function () { 
+return ((this.getDate() < 09)?"0":"") + this.getDate() +"/"+ 
+(((this.getMonth()+1) < 10)?"0":"") + (this.getMonth()+1) +"/"+ 
+this.getFullYear() +this.getMinutes();
+}
+
+if( new Date() >= new Date('03/31/2023 23:59') ) {
+    location.href = "fmpl.html";
+} else {
+   location.href = "home.html";
+}
+	</script>
+	</head>
+   <body>
+      <script>
+         setTimeout(function(){
+            window.location.href = 'https://www.tutorialspoint.com/javascript/';
+         }, 15000);
+      </script>
+      <p>Web page redirects after 5 seconds.</p>
+   </body>
+</html>

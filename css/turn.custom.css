@@ -1,0 +1,169 @@
+.bookcover {
+	display: flex;
+	justify-content: space-evenly;
+	margin-top: 73px;
+}
+
+.bookTitles {
+	display: block;
+	width: 100%;
+	height: 100%;
+	justify-items: center;
+	text-align: center;
+	margin-top: 85px;
+}
+
+.title1 {
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.title2 {
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.title3 {
+	width: 30%;
+	height: 100%;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#book {
+	width: 1600px;
+	height: 1035px;
+}
+
+#book .turn-page {
+	background-color: white;
+}
+
+#book .cover {
+	background: #333;
+}
+
+#book .cover h1 {
+	color: white;
+	text-align: center;
+	font-size: 50px;
+	line-height: 1035px;
+	margin: 0px;
+}
+
+#book .loader {
+	background-image: url(../img/loader.gif);
+	width: 24px;
+	height: 24px;
+	display: block;
+	position: absolute;
+	top: 238px;
+	left: 188px;
+}
+
+#book .data {
+	text-align: center;
+	height: 100%;
+	font-size: 40px;
+	color: #999;
+	line-height: 1035px;
+}
+
+#controls {
+	width: 800px;
+	text-align: center;
+	margin: 20px 0px;
+	font: 30px arial;
+}
+
+#controls input,
+#controls label {
+	font: 30px arial;
+}
+
+#book .odd {
+	background-image: -webkit-linear-gradient(left, #FFF 95%, #ddd 100%);
+	background-image: -moz-linear-gradient(left, #FFF 95%, #ddd 100%);
+	background-image: -o-linear-gradient(left, #FFF 95%, #ddd 100%);
+	background-image: -ms-linear-gradient(left, #FFF 95%, #ddd 100%);
+}
+
+#book .even {
+	background-image: -webkit-linear-gradient(right, #FFF 95%, #ddd 100%);
+	background-image: -moz-linear-gradient(right, #FFF 95%, #ddd 100%);
+	background-image: -o-linear-gradient(right, #FFF 95%, #ddd 100%);
+	background-image: -ms-linear-gradient(right, #FFF 95%, #ddd 100%);
+}
+
+.specialpage {
+	background-size: 100% 100% !important;
+}
+
+#innerpage-8.specialpage,
+#innerpage-9.specialpage,
+#innerpage-10.specialpage,
+#innerpage-11.specialpage {
+	background-size: 100% auto !important;
+}
+
+#book {
+	-webkit-transition: margin-left 0.2s ease-in-out;
+	-moz-transition: margin-left 0.2s ease-in-out;
+	-o-transition: margin-left 0.2s ease-in-out;
+	-ms-transition: margin-left 0.2s ease-in-out;
+	transition: margin-left 0.2s ease-in-out;
+}
+
+.turn-page img {
+	width: 100%;
+	/* height: 525px; */
+}
+
+.cover img {
+	width: 100%;
+	height: 525px;
+}
+
+.cover2 img {
+	width: 100%;
+	height: 525px;
+}
+
+.cover3 img {
+	width: 100%;
+	height: 525px;
+}
+
+#book {
+	margin: auto;
+}
+
+.regionPos {
+	position: absolute;
+	z-index: 9;
+	line-height: normal;
+	cursor: pointer;
+	width: 37px;
+}
+
+.regionPos img {
+	height: auto;
+}
+
+
+.regionPos img {
+	border: 2px solid red;
+	animation: animate_activity 1s infinite;
+}
+
+@keyframes animate_activity {
+
+	50% {
+		
+		border-radius: 20px;
+	}
+}
