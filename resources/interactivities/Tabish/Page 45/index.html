@@ -1,4 +1,5 @@
 <!doctype html>
+
 <html>
 <head>
 	<meta charset="UTF-8"/>
@@ -7,56 +8,44 @@
 	<link href="styles.css" type="text/css" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-	<script src="https://code.jquery.com/jquery-3.6.3.js" ></script>
+	<script  src="https://code.jquery.com/jquery-3.6.3.js" ></script>
 </head>
 <body>
-<div class="container-fluid" >
-	<div class="row">
-		<div class="col-md-12">
-			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >
-			Look at the pictures. Write <span class="let">in</span>, <span class="let">on</span> or <span class="let">under</span>.</h4>
+<div class="field">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h4>
+					<img onclick="play()" src="img/speaker.png" class="speaker" >
+					Which picture makes a pair with the given words? Write its name.
+				</h4>
+			</div>
 		</div>
-	</div>
-	<div class="row" >
-		<div class="col-md-12" >
-			<div class="row">
-				<div class="col-md-6" style="margin:auto;">
-					<center>
-						a bag <input type="text" id="1" autocomplete="off"> a table
-					</center>
-				</div>
-				<div class="col-md-6" style="margin:auto;">
-					<center>
-						<img src="img/1.jpg" class="tek">
-					</center>
-				</div>
-				<div class="col-md-6" style="margin:auto;">
-					<center>
-						<img src="img/2.jpg" class="tek">
-					</center>
-				</div>
-				<div class="col-md-6" style="margin:auto;">
-					<center>
-						a mug <input type="text" id="2" autocomplete="off"> a bucket
-					</center>
-				</div>
-				<div class="col-md-6" style="margin:auto;">
-					<center>
-						a pup <input type="text" id="3" autocomplete="off"> the chair
-					</center>
-				</div>
-				<div class="col-md-6" style="margin:auto;">
-					<center>
-						<img src="img/3.jpg" class="tek">
-					</center>
+		<div class="row">
+			<div class="col-md-12">
+				<center><img src="img/1.png" class="ques_image"></center>
+			</div>
+			<div class="col-md-5" style="margin:auto;">
+				<div class="answers">
+					<center>hands and <input type="text" id="tab0" ></center>
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="row">
-		<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:40%;"></center></div>
-		<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:40%;"></center></div>
-		<div class="col-md-4"><center><img id="reset" onclick="window.location.reload()" src="img/reset.png" style="margin-top:10px; width:40%;"></center></div>
+		<div class="row">
+			<div class="col-md-12">
+				<center><img src="img/1.png" class="ques_image"></center>
+			</div>
+			<div class="col-md-5" style="margin:auto;">
+				<div class="answers">
+					<center>cup and <input type="text" id="tab2" ></center>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:50%;"></center></div>
+			<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:50%;"></center></div>
+			<div class="col-md-4"><center><img id="reset" onclick="window.location.reload()" src="img/reset.png" style="margin-top:10px; width:50%;"></center></div>
+		</div>
 	</div>
 </div>
 <div id="blocks" style="display:none; margin-top:-400px; z-index:99;">
@@ -67,7 +56,7 @@
 </div>
 <audio src="audio/well-done.mp3" id="audio1"></audio>
 <audio src="audio/try-again.mp3" id="audio2"></audio>
-<audio src="audio/Page-25.mp3" id="audio3"></audio>
+<audio src="audio/Page-45.mp3" id="audio3"></audio>
 </body>
 <script src="main.js"></script>
 </html>

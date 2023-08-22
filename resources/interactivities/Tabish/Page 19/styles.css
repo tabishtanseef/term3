@@ -60,7 +60,7 @@ input{
 	text-align:center;
 	cursor:pointer;
 	background:white;
-	margin-top:10px !important;
+	margin-top:0px !important;
 }
 .ans{
 	font-size:30px;
@@ -113,11 +113,11 @@ input{
 	padding:20px;
 }
 .tek{
-	width:90%;
+	width:80%;
 	margin-top: 10px;
 	border:5px solid #FECA0A;
 }
 .textt{
-	font-size: 25px;
-	margin-top: 25px;
+	font-size: 20px;
+	margin-top: 15px;
 }
