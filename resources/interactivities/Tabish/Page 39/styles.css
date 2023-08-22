@@ -1,20 +1,18 @@
 @font-face {
   font-family: "Sehaj";
+  src: url('All Fonts/Sehaj-ENG-SemiBold.otf');
+}
+@font-face {
+  font-family: "Sehaj Bold";
   src: url('All Fonts/Sehaj-ENG-Bold.otf');
-}
-h5{
-	color:#C529A3 !important;
-	font-family: "Sehaj";
-	letter-spacing:1px;
-}
-.let{
-	color:#0166B3;
 }
 body{
 	margin:0px;
 	padding:20px;
-	background-image:url('img/b1.png');
-	background-size:cover;
+}
+h4{
+	color:#C529A3 !important;
+	font-family: "Sehaj Bold" !important;
 }
 .hidden{
 	display:none;
@@ -23,7 +21,12 @@ body{
 	cursor:pointer;
 }
 .canvas{
-	cursor: url(img/brush.png), auto;
+	cursor: url(img/pen.png), auto;
+	border:2px dotted orange;
+	border-radius:50px;
+}
+.ques_image{
+	width:400px !important;
 }
 .speaker{
 	width:30px; 
@@ -39,7 +42,9 @@ body{
 	padding:20px;
 }
 .tools{
-	
+	display:flex;
+	justify-content: center;
+	flex-direction: row;
 	margin-top: 15px;
 }
 

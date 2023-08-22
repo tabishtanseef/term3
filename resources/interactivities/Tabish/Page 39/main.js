@@ -1,5 +1,6 @@
 const canvas = document.getElementById("canvas");
-
+canvas.width = window.innerWidth - 60;
+canvas.height = window.innerHeight - 300;
 
 let context = canvas.getContext("2d");
 let start_background_color = "white";
@@ -9,6 +10,7 @@ context.fillRect(0,0,canvas.width,canvas.height);
 
 let draw_color = "cyan";
 let draw_width = "2";
+
 let is_drawing = false;
 
 let restore_array = [];
@@ -23,14 +25,6 @@ canvas.addEventListener("touchend", stop, false);
 canvas.addEventListener("mouseup", stop, false);
 canvas.addEventListener("mouseout", stop, false);
 
-window.onload = function() {
-  var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var img = document.getElementById("scream");
-  canvas.width = 600;
-  canvas.height = 600;
-  ctx.drawImage(img, 10, 10);
-};
 function change_color(element){
 	draw_color = element.style.background;
 	rgb = draw_color;
@@ -50,7 +44,7 @@ function change_color(element){
 	draw_color = "#" + r + g + b;
 	$("#c_p").val(draw_color);
 	var elementToChange = document.getElementsByClassName("canvas")[0];
-	elementToChange.style.cursor = "url('img/brush.png'), auto";
+	elementToChange.style.cursor = "url('img/pen.png'), auto";
 }
 
 function start(){
@@ -81,20 +75,16 @@ function stop(event) {
 		is_drawing = false;
 	}
 	event.preventDefault();
-	console.log(event.type);
 	if(event.type != 'mouseout'){
 		restore_array.push(context.getImageData(0, 0, canvas.width, canvas.height));
 		index += 1;
-	console.log(restore_array);
-	console.log(index);
 	}
 }
 
 function clear_canvas() {
-	var canvas = document.getElementById("canvas");
-  var ctx = canvas.getContext("2d");
-  var img = document.getElementById("scream");
-  ctx.drawImage(img, 10, 10);
+	context.fillStyle = start_background_color;
+	context.clearRect(0, 0, canvas.width, canvas.height);
+	context.fillRect(0, 0, canvas.width, canvas.height);
 	restore_array=[];
 	index=-1;
 }
@@ -119,7 +109,7 @@ function pen() {
 	draw_color = 'black';
 	draw_width = "2";
 	var elementToChange = document.getElementsByClassName("canvas")[0];
-	elementToChange.style.cursor = "url('img/brush.png'), auto";
+	elementToChange.style.cursor = "url('img/pen.png'), auto";
 }
  
 function play(){

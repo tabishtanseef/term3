@@ -9,7 +9,7 @@ function drop1(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   console.log('drop1',data);
-  if(data=='drag1' || data=='drag2'){
+  if(data=='drag1'){
 	count++;
   }
   ev.target.appendChild(document.getElementById(data));
@@ -18,7 +18,7 @@ function drop2(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   console.log('drop2',data);
-  if(data=='drag1' || data=='drag2'){
+  if(data=='drag2'){
 	count++;
   }
   ev.target.appendChild(document.getElementById(data));
@@ -27,7 +27,7 @@ function drop3(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   console.log('drop3',data);
-  if(data=='drag3' || data=='drag4'){
+  if(data=='drag3'){
 	count++;
   }
   ev.target.appendChild(document.getElementById(data));
@@ -36,14 +36,23 @@ function drop4(ev) {
   ev.preventDefault();
   var data = ev.dataTransfer.getData("text");
   console.log('drop4',data);
-  if(data=='drag3' || data=='drag4'){
+  if(data=='drag4'){
+	count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
+function drop5(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  console.log('drop5',data);
+  if(data=='drag5'){
 	count++;
   }
   ev.target.appendChild(document.getElementById(data));
 }
 
 function check(){
-	if(count>=4){
+	if(count>=5){
 		var audio = document.getElementById("audio1");
 		audio.play();
 		setTimeout(function(){ 

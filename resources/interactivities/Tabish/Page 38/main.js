@@ -97,16 +97,16 @@ function go(a){
 	$('#'+a).css('pointer-events','none');
 	if(a==1 || a==2 || a==3 || a==4 || a==5 || a==6){
 		b = parseFloat(a)+10;
-		c = parseFloat(b)+100;
+		c = parseFloat(b)+10;
 		$('#'+b).css('pointer-events','none');
 		$('#'+c).css('pointer-events','none');
-	}else if(a>100){
-		b = parseFloat(a)-100;
+	}else if(a>20){
+		b = parseFloat(a)-10;
 		c = parseFloat(b)-10;
 		$('#'+b).css('pointer-events','none');
 		$('#'+c).css('pointer-events','none');
 	}else{
-		b = parseFloat(a)+100;
+		b = parseFloat(a)+10;
 		c = parseFloat(a)-10;
 		$('#'+b).css('pointer-events','none');
 		$('#'+c).css('pointer-events','none');
@@ -133,7 +133,6 @@ function go(a){
 	}
 }
 function bo(a){
-
 	b = a+10;
 	c = b+100;
 	$('#'+c).css('color','black');

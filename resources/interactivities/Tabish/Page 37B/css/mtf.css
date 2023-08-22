@@ -759,5 +759,5 @@ letter-spacing:1px;
 	}
 }
 
-.wrapper .content .leftSide li strong img, .wrapper .content .rightSide li strong img {max-width:100%;}
-.wrapper .content .rightSide li strong img {max-width:25% !important;}
+.wrapper .content .leftSide li strong img, 
+.wrapper .content .rightSide li strong img {max-width:100%;}

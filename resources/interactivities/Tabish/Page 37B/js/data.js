@@ -33,29 +33,23 @@ var tempJsonObj =
 	"LeftHeading"  : "",
 	"RightHeading" : "",
      "Left": [
-		"<img src='img/1.png'>",
-        "<img src='img/2.png'>",
-		"<img src='img/3.png'>",
-		"<img src='img/4.png'>",
-		"<img src='img/5.png'>",
-		"<img src='img/6.png'>"
+		"<img src='img/1.jpg'>",
+        "<img src='img/2.jpg'>",
+		"<img src='img/3.jpg'>",
+		"<img src='img/4.jpg'>"
 	   
     ],
     "Right": [
-		"<img src='img/44.png'>",
-		"<img src='img/33.png'>",
-        "<img src='img/11.png'>",
-		"<img src='img/66.png'>",
-		"<img src='img/22.png'>",
-		"<img src='img/55.png'>"		
+		"<img src='img/44.jpg'>",
+		"<img src='img/33.jpg'>",
+        "<img src='img/11.jpg'>",
+		"<img src='img/22.jpg'>"		
     ],
     "Answer": [
         "l1_r3",
-        "l2_r5",
+        "l2_r4",
         "l3_r2",
-        "l4_r1",
-        "l5_r6" ,
-        "l6_r4"       
+        "l4_r1"      
     ],
     "text": "Click on an option in Column A and then click on the correct answer in Column B.<br /> <br /> After completing, click on Submit.<br /> <br />To check answer, click on Show Answer."
 }

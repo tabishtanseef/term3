@@ -84,36 +84,36 @@ window.onload = function() {
 		localStorage.setItem("lastname", "");
 	}
 	var canvas = document.getElementById("canvas");
-	canvas.width = 250;
-	canvas.height = 53;
+	canvas.width = 600;
+	canvas.height = 67;
 	var ctx = canvas.getContext("2d");
 	var img = document.getElementById("scream");
 	ctx.drawImage(img, 0, 0);
 	
 	var canvas2 = document.getElementById("canvas2");
-	canvas2.width = 250;
-	canvas2.height = 53;
+	canvas2.width = 600;
+	canvas2.height = 67;
 	var ctx2 = canvas2.getContext("2d");
 	var img2 = document.getElementById("scream2");
 	ctx2.drawImage(img2, 0, 0);
 	
 	var canvas3 = document.getElementById("canvas3");
-	canvas3.width = 250;
-	canvas3.height = 53;
+	canvas3.width = 600;
+	canvas3.height = 67;
 	var ctx3 = canvas3.getContext("2d");
 	var img3 = document.getElementById("scream3");
 	ctx3.drawImage(img3, 0, 0);
 	
 	var canvas4 = document.getElementById("canvas4");
-	canvas4.width = 250;
-	canvas4.height = 53;
+	canvas4.width = 600;
+	canvas4.height = 67;
 	var ctx4 = canvas4.getContext("2d");
 	var img4 = document.getElementById("scream4");
 	ctx4.drawImage(img4, 0, 0);
 	
 	var canvas5 = document.getElementById("canvas5");
-	canvas5.width = 250;
-	canvas5.height = 53;
+	canvas5.width = 600;
+	canvas5.height = 67;
 	var ctx5 = canvas5.getContext("2d");
 	var img5 = document.getElementById("scream5");
 	ctx5.drawImage(img5, 0, 0);

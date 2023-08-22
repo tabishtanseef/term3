@@ -13,35 +13,33 @@
 <body>
 	<div class="field">
 		<div class="row">
-			<div class="col-md-12">
-				<h5>
-					<img onclick="play()" src="img/speaker.png" class="speaker" >
-					Colour the picture. Can you name the season?
-				</h5>
+		<div class="col-md-12">
+			<h4>
+				<img onclick="play()" src="img/speaker.png" class="speaker" >Draw a pencil outside the box and colour it.
+			</h4>
+		</div>
+		<div class="col-md-12">
+			<div class="tools">
+				<div onClick="change_color(this)" class="color-field" style="background:#ff0000;"></div>
+				<div onClick="change_color(this)" class="color-field" style="background:#0000ff;"></div>
+				<div onClick="change_color(this)" class="color-field" style="background:#00ff00;"></div>
+				<div onClick="change_color(this)" class="color-field" style="background:#ffff00;"></div>
+				<input onInput="draw_color = this.value" id="c_p" type="color" class="color-picker">
+				<input onInput="draw_width = this.value" type="range" min="1" max="50" value="1" class="pen-range">
+		
+				<button onclick="pen()" type="button" class="button">Pen</button>
+				<button onclick="erase()" type="button" class="button">Eraser</button>
+				<!-- <button onclick="undo_last()" type="button" class="button">Undo</button> -->
+				<button onclick="clear_canvas()" type="button" class="button">Clear</button>
 			</div>
 		</div>
-		<div class="row">
-			<div class="col-md-1"></div>
-			<div class="col-md-8">
-				<img src="img/1.jpg" id="scream" class="hidden" style="width:100px;">
-				<center><canvas id="canvas" class="canvas"></canvas></center>
-			</div>
-			<div class="col-md-1"></div>
-			<div class="col-md-2">
-				<div class="tools">
-					<div onClick="change_color(this)" class="color-field" style="background:#ff0000;"></div><br>
-					<div onClick="change_color(this)" class="color-field" style="background:#0000ff;"></div><br>
-					<div onClick="change_color(this)" class="color-field" style="background:#00ff00;"></div><br>
-					<div onClick="change_color(this)" class="color-field" style="background:#ffff00;"></div><br>
-					<input onInput="draw_color = this.value" id="c_p" type="color" class="color-picker"><br>
-					<input onInput="draw_width = this.value" type="range" min="1" max="50" value="1" class="pen-range"><br>
-					<button onclick="pen()" type="button" class="button">Brush</button><br>
-					<button onclick="window.location.reload()" type="button" class="button">Clear</button>
-				</div>
-			</div>
+		</div>
+		<div class="col-md-12">
+			<center><img src="img/box.png" class="ques_image"></center>
+			<canvas id="canvas" class="canvas"></canvas>
 		</div>
 	</div>
-<audio src="audio/Page-145.mp3" id="audio3"></audio>
+<audio src="audio/Page-89.mp3" id="audio3"></audio>
 </body>
 <script src="main.js"></script>
 </html>
