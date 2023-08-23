@@ -1,0 +1,109 @@
+
+@font-face {
+  font-family: "Sehaj";
+  src: url('All Fonts/Sehaj-ENG-SemiBold.otf');
+}
+@font-face {
+  font-family: "Sehaj Bold";
+  src: url('All Fonts/Sehaj-ENG-Bold.otf');
+}
+h4{
+	color:#C529A3 !important;
+	font-family: "Sehaj Bold";
+	letter-spacing:1px;
+}
+.let{
+	color:#0166B3;
+}
+
+body{
+	margin:0px;
+	padding:0px;
+	background-image:url('img/b1.png');
+	background-size:cover;
+	font-family: "Sehaj" !important;
+	font-size:20px !important;
+}
+.container{
+	background:#fff;
+	padding-bottom:10px;
+}
+#welldone{
+	width:50%;
+}
+.part{
+	display:inline-block;
+	
+}
+#div1, #div2, #div3, #div4, #div5  {
+	width: 150px;
+	height: 40px; 
+	padding:2px;
+	border:2px solid #FECA0A;
+	border-radius:20px;
+	background:white;
+	display:inline-block;
+	margin-top:25px;
+}
+
+input{
+	width:50px;
+	text-align:center;
+	background:#fff;
+	border:2px solid #FECA0A;
+	border-radius:20px;
+	margin-top:10px;
+	padding:2px;
+	cursor:pointer;
+	font-size:25px !important;
+	letter-spacing:3px;	
+}
+
+.opt{
+	width:80px !important;
+}
+.blank{
+	border:2px solid #71BF44;
+	border-radius:10px;
+	color:#71BF44;
+	background:#fff;
+	pointer-events:auto !important;
+}
+.down{
+	margin-top:25px;
+	margin-left:12px;
+}
+.ques_image{
+	width:60%;
+}
+.ques_imageR{
+	width:100%;
+}
+.hidden{
+	display:none !important;
+}
+.speaker{
+	width:30px; 
+	height:30px; 
+	margin-right:10px;
+	margin-left:10px;
+	cursor:pointer;
+}
+.canvas {
+    background:#D2B985;
+	font-size:25px;
+	padding:7px;
+	margin-top:7px !important;
+	border-radius:10px;
+	text-align:center;
+	color:#fff;
+}
+#submit, #reset, #sol{
+	cursor:pointer;
+}
+.container-fluid{
+	padding:20px;
+}
+.tek{
+	width:70%;
+}

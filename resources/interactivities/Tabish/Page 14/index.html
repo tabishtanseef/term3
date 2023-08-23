@@ -1,0 +1,138 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title></title>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script  src="https://code.jquery.com/jquery-3.6.3.js" ></script>
+</head>
+<body>
+<br>
+<div class="field">
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12">
+				<h4>
+					<img onclick="play()" src="img/speaker.png" class="speaker" >
+					Click to circle the word that rhymes with the given picture.
+				</h4>
+			</div>
+		</div>
+		<div class="mains">
+		<div class="row canvas">
+			<div class="col-md-4">
+				<div class="box box1">
+					<img src="img/1.png" class="ques_image">
+					<img src="img/tick.png" class="t_1 hidden" style="width:40px;">
+					<img src="img/cross.png" class="c_1 hidden" style="width:40px;"><br>
+					<div class="answers">
+						<span id="15" onclick="go(this.id,1)" >dog</span>
+						<span id="14" onclick="go(this.id,1)" >car</span>
+						<span id="13" onclick="go(this.id,1)" >pour</span><br>
+						<span id="12" onclick="go(this.id,1)" >jar</span>
+						<span id="11" onclick="go(this.id,1)" >bear</span>
+						<span id="1" onclick="go(this.id,1)" >bye</span><br>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box box2">
+				<img src="img/2.png" class="ques_image">
+				<img src="img/tick.png" class="t_2 hidden" style="width:40px;">
+				<img src="img/cross.png" class="c_2 hidden" style="width:40px;"><br>
+				<div class="answers">
+					<span id="16" onclick="go(this.id,2)" >than</span>
+					<span id="17" onclick="go(this.id,2)" >chair</span>
+					<span id="18" onclick="go(this.id,2)" >tune</span><br>
+					<span id="2" onclick="go(this.id,2)" >noon</span>
+					<span id="19" onclick="go(this.id,2)" >bag</span>
+					<span id="20" onclick="go(this.id,2)" >bee</span><br>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box box3">
+				<img src="img/3.png" class="ques_image">
+				<img src="img/tick.png" class="t_3 hidden" style="width:40px;">
+				<img src="img/cross.png" class="c_3 hidden" style="width:40px;"><br>
+				<div class="answers">
+					<span id="21" onclick="go(this.id,3)" >table</span>
+					<span id="22" onclick="go(this.id,3)" >gate</span>
+					<span id="23" onclick="go(this.id,3)" >give</span><br>
+					<span id="24" onclick="go(this.id,3)" >star</span>
+					<span id="3" onclick="go(this.id,3)" >pear</span>
+					<span id="25" onclick="go(this.id,3)" >frog</span><br>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box box4">
+				<img src="img/4.png" class="ques_image">
+				<img src="img/tick.png" class="t_4 hidden" style="width:40px;">
+				<img src="img/cross.png" class="c_4 hidden" style="width:40px;"><br>
+				<div class="answers">
+					<span id="4" onclick="go(this.id,4)" >mat</span>
+					<span id="26" onclick="go(this.id,4)" >bee</span>
+					<span id="27" onclick="go(this.id,4)" >pen</span><br>
+					<span id="28" onclick="go(this.id,4)" >fan</span>
+					<span id="29" onclick="go(this.id,4)" >rain</span>
+					<span id="30" onclick="go(this.id,4)" >car</span><br>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box box5">
+				<img src="img/5.png" class="ques_image">
+				<img src="img/tick.png" class="t_5 hidden" style="width:40px;">
+				<img src="img/cross.png" class="c_5 hidden" style="width:40px;"><br>
+				<div class="answers">
+					<span id="31" onclick="go(this.id,5)" >moon</span>
+					<span id="32" onclick="go(this.id,5)" >bee</span>
+					<span id="33" onclick="go(this.id,5)" >frog</span><br>
+					<span id="34" onclick="go(this.id,5)" >hand</span>
+					<span id="35" onclick="go(this.id,5)" >hat</span>
+					<span id="5" onclick="go(this.id,5)" >look</span><br>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-4">
+				<div class="box box6">
+				<img src="img/6.png" class="ques_image">
+					<img src="img/tick.png" class="t_6 hidden" style="width:40px;">
+					<img src="img/cross.png" class="c_6 hidden" style="width:40px;"><br>
+				<div class="answers">
+					<span id="36" onclick="go(this.id,6)" >train</span>
+					<span id="37" onclick="go(this.id,6)" >car</span>
+					<span id="6" onclick="go(this.id,6)" >dog</span><br>
+					<span id="38" onclick="go(this.id,6)" >pan</span>
+					<span id="39" onclick="go(this.id,6)" >bunny</span>
+					<span id="40" onclick="go(this.id,6)" >bicycle</span><br>
+				</div>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:50%;"></center></div>
+			<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:50%;"></center></div>
+			<div class="col-md-4"><center><img id="reset" onclick="window.location.reload()" src="img/reset.png" style="margin-top:10px; width:50%;"></center></div>
+		</div>
+		</div>
+	</div>
+</div>
+<div id="blocks" style="display:none; margin-top:-400px; z-index:99;">
+	<center><img src="img/Welldone.gif" id="welldone"></center>
+</div>
+<div id="blocks2" style="display:none; margin-top:-400px; z-index:99;">
+	<center><img src="img/TryAgain.gif" style="width:300px;"></center>
+</div>
+<audio src="audio/well-done.mp3" id="audio1"></audio>
+<audio src="audio/try-again.mp3" id="audio2"></audio>
+<audio src="audio/Page-14.mp3" id="audio3"></audio>
+</body>
+<script src="main.js"></script>
+</html>
