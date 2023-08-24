@@ -11,11 +11,12 @@ body{
 	margin:0px;
 	padding:10px;
 	font-family: "Sehaj" !important;
-	font-size:30px !important;
-	background-image:url('img/b1.png');
+	font-size:20px !important;
+	background-image:url('img/10.jpg');
+	background-position:center;
 	background-size:cover;
 }
-h4{
+h5{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
 	letter-spacing:1px;
@@ -46,26 +47,27 @@ h4{
 	font-size:30px;
 }
 input{
-	width:45px;
-	height:45px;
+	width:55px;
+	height:55px;
 	border:2px solid #FECA0A;
 	font-size:28px !important;
 	text-align:center;
 	cursor:pointer;
 	background:white;
-	margin:10px !important;
-	margin-top:-90px !important;
+	margin-top:0px !important;
 	border-radius:50%;
 }
 .m1{
 	padding:10px;
 	border:2px solid #41C2D5;
 	background:#fff;
+	border-radius:50%;
 }
 .m2{
 	padding:10px;
 	border:2px solid #EF59A1;
 	background:#fff;
+	border-radius:50%;
 }
 .ans{
 	font-size:30px;
@@ -118,9 +120,8 @@ input{
 	padding:20px;
 }
 .tek{
-	width:60%;
-	border-radius:20px;
-	margin-bottom:10px;
+	width:80%;
+	margin-top:10px;
 }
 .lefty{
 	background:#EFF6E8;

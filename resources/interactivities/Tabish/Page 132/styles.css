@@ -1,20 +1,25 @@
+
 @font-face {
   font-family: "Sehaj";
+  src: url('All Fonts/Sehaj-ENG-SemiBold.otf');
+}
+@font-face {
+  font-family: "Sehaj Bold";
   src: url('All Fonts/Sehaj-ENG-Bold.otf');
+}
+body{
+	margin:0px;
+	padding:0px;
+	font-family: "Sehaj" !important;
+	font-size:18px !important;
 }
 h4{
 	color:#C529A3 !important;
-	font-family: "Sehaj";
+	font-family: "Sehaj Bold";
 	letter-spacing:1px;
 }
 .let{
 	color:#0166B3;
-}
-
-
-body{
-	margin:0px;
-	padding:0px;
 }
 .mains{
 	height:500px;
@@ -24,15 +29,16 @@ body{
 #welldone{
 	width:50%;
 }
-#div1, #div2, #div3, #div4, #div5  {
-  width: 170px;
-  height: 60px; 
-  padding:2px;
-  border: 2px solid #000;
+#div1, #div2, #div3, #div4, #div5, #div6  {
+  width: 100px;
+  height: 30px; 
+  padding-bottom:0px;
+  border-bottom: 2px solid #000;
   background:white;
+  display:inline-block;
 }
 .solve{
-	font-size:30px;
+	font-size:20px;
 }
 input{
 	width:70px;
@@ -44,7 +50,7 @@ input{
 	background:none;
 }
 .ans{
-	font-size:30px;
+	font-size:20px;
 }
 .opt{
 	width:80px !important;
@@ -95,4 +101,5 @@ input{
 }
 .tek{
 	width:70%;
+	margin-bottom:0px;
 }

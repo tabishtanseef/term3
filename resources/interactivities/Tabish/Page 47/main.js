@@ -38,23 +38,7 @@ function check(){
 		$(".c_4").removeClass('hidden');
 		$(".t_4").addClass('hidden');
 	}
-	if(u==1){
-		$(".t_5").removeClass('hidden');
-		$(".c_5").addClass('hidden');
-		bo(5);
-	}else{
-		$(".c_5").removeClass('hidden');
-		$(".t_5").addClass('hidden');
-	}
-	if(v==1){
-		$(".t_6").removeClass('hidden');
-		$(".c_6").addClass('hidden');
-		bo(6);
-	}else{
-		$(".c_6").removeClass('hidden');
-		$(".t_6").addClass('hidden');
-	}
-	if(q==1 && r==1 && s==1 && t==1 && u==1 && v==1){
+	if(q==1 && r==1 && s==1 && t==1){
 		$("#sol").css("pointer-events", "auto");
 		var audio = document.getElementById('audio1');
 		audio.play();
@@ -77,7 +61,7 @@ function play(){
 
 function solve(){
 	a=1;
-	while(a<7){
+	while(a<5){
 		$(".c_"+a).addClass('hidden');
 		//$(".t_"+a).removeClass('hidden');
 		b = a+10;
@@ -95,7 +79,7 @@ function solve(){
 function go(a){
 	$('#'+a).css('background','#FECA0A');
 	$('#'+a).css('pointer-events','none');
-	if(a==1 || a==2 || a==3 || a==4 || a==5 || a==6){
+	if(a==1 || a==2 || a==3 || a==4){
 		b = parseFloat(a)+10;
 		c = parseFloat(b)+100;
 		$('#'+b).css('pointer-events','none');
@@ -124,12 +108,6 @@ function go(a){
 	}
 	if(a==4){
 		t++;
-	}
-	if(a==5){
-		u++;
-	}
-	if(a==6){
-		v++;
 	}
 }
 function bo(a){

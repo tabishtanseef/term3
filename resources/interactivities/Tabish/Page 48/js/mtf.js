@@ -481,6 +481,6 @@ function playAudio(audioname) {
 	audio.play();
 }
 function pla() {
-	var audio = new Audio("audio/Page-76.mp3");
+	var audio = new Audio("audio/Page-48.mp3");
 	audio.play();
 }

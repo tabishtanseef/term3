@@ -14,82 +14,109 @@
 <div class="container-fluid" >
 	<div class="row">
 		<div class="col-md-12">
-			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >
-			Write the words that go together. Drag and drop the words from the box. One has been done for you.</h4>
+			<h4>
+				<img onclick="play()" src="img/speaker.png" class="speaker" >Write the words that go together. <br>
+				&nbsp; &nbsp; &nbsp; Drag and drop the words from the box. One has been done for you.
+			</h4>
 		</div>
 		<div class="col-md-10" style="border:5px solid #FECA0A; margin:auto; background:#fff; padding:10px; text-align:center;">
-			<span class="ans" id="drag2" draggable="true" ondragstart="drag(event)" >ball</span> &nbsp; &nbsp; &nbsp;
-			<span class="ans" id="drag3" draggable="true" ondragstart="drag(event)" >fruits</span> &nbsp; &nbsp; &nbsp;
-			<span class="ans" id="drag1" draggable="true" ondragstart="drag(event)" >dogs</span> &nbsp; &nbsp; &nbsp;
-			<span class="ans" id="drag4" draggable="true" ondragstart="drag(event)" >queen</span>
+			<span class="ans" id="drag2" draggable="true" ondragstart="drag(event)" >key</span> &nbsp; &nbsp; &nbsp;
+			<span class="ans" id="drag3" draggable="true" ondragstart="drag(event)" >dogs</span> &nbsp; &nbsp; &nbsp;
+			<span class="ans" id="drag1" draggable="true" ondragstart="drag(event)" >shoes</span> &nbsp; &nbsp; &nbsp;
+			<span class="ans" id="drag4" draggable="true" ondragstart="drag(event)" >chair</span>
 		</div>
 	</div>
 </div>
-<div class="container" style="border:5px solid #FECA0A; padding:10px; " >
+<div class="container-fluid box" style="border:5px solid #FECA0A; padding:10px; " >
 	<div class="row" >
-		<div class="col-md-2" style="text-align:right;">
-			<br>king and
+		<div class="col-md-3" style="text-align:right;">
+			<br><input type="text" readonly value="king">
 		</div>
-		<div class="col-md-3">
-			<img src="img/1.png" class="ques_image">
+		<div class="col-md-2">
+			<center><img src="img/1.jpg" class="ques_image"></center>
+		</div>
+		<div class="col-md-2">
+			<center><div class="and">and</div></center>
+		</div>
+		<div class="col-md-3"  style="text-align:center;">
+			<div id="div1" class="solve">queen</div>
+		</div>
+		<div class="col-md-2">
+			<img src="img/2.jpg" class="ques_image">
+		</div>
+	</div>
+	<div class="row" >
+		<div class="col-md-3" style="text-align:right;">
+			<br><input type="text" readonly value="socks">
+		</div>
+		<div class="col-md-2">
+			<center><img src="img/3.jpg" class="ques_image"></center>
+		</div>
+		<div class="col-md-2">
+			<center><div class="and">and</div></center>
+		</div>
+		<div class="col-md-3"  style="text-align:center;">
+			<div id="div1" class="aa" ondrop="drop1(event)" ondragover="allowDrop(event)"></div>
+			<div id="div1" class="solve hidden" >shoes</div>
+		</div>
+		<div class="col-md-2">
+			<img src="img/4.jpg" class="ques_image">
+		</div>
+	</div>
+	<div class="row" >
+		<div class="col-md-3" style="text-align:right;">
+			<br><input type="text" readonly value="lock">
+		</div>
+		<div class="col-md-2">
+			<center><img src="img/5.jpg" class="ques_image"></center>
+		</div>
+		<div class="col-md-2">
+			<center><div class="and">and</div></center>
+		</div>
+		<div class="col-md-3"  style="text-align:center;">
+			<div id="div1" class="aa" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
+			<div id="div1" class="solve hidden" >key</div>
+		</div>
+		<div class="col-md-2">
+			<img src="img/6.jpg" class="ques_image">
+		</div>
+	</div>
+	<div class="row" >
+		<div class="col-md-3" style="text-align:right;">
+			<br><input type="text" readonly value="cats">
+		</div>
+		<div class="col-md-2">
+			<center><img src="img/7.jpg" class="ques_image"></center>
+		</div>
+		<div class="col-md-2">
+			<center><div class="and">and</div></center>
+		</div>
+		<div class="col-md-3"  style="text-align:center;">
+			<div id="div1" class="aa" ondrop="drop3(event)" ondragover="allowDrop(event)"></div>
+			<div id="div1" class="solve hidden" >dogs</div>
+		</div>
+		<div class="col-md-2">
+			<img src="img/8.jpg" class="ques_image">
+		</div>
+	</div>
+	<div class="row" >
+		<div class="col-md-3" style="text-align:right;">
+			<br><input type="text" readonly value="table">
+		</div>
+		<div class="col-md-2">
+			<center><img src="img/9.jpg" class="ques_image"></center>
+		</div>
+		<div class="col-md-2">
+			<center><div class="and">and</div></center>
 		</div>
 		<div class="col-md-3"  style="text-align:center;">
 			<div id="div1" class="aa" ondrop="drop4(event)" ondragover="allowDrop(event)"></div>
-			<div id="div1" class="solve hidden" >queen</div>
+			<div id="div1" class="solve hidden" >chair</div>
 		</div>
-		<div class="col-md-3">
-			<img src="img/2.png" class="ques_image">
-		</div>
-	</div>
-	<hr>
-	<div class="row" >
-		<div class="col-md-3">
-			<img src="img/3.png" class="ques_image">
-		</div>
-		<div class="col-md-3" style="text-align:center;">
-			<div id="div2" class="aa" ondrop="drop3(event)" ondragover="allowDrop(event)"></div>
-			<div id="div2" class="solve hidden" >fruits</div>
-		</div>
-		<div class="col-md-3" style="text-align:left;">
-			<br>and vegetables
-		</div>
-		<div class="col-md-3">
-			<img src="img/4.png" class="ques_image">
+		<div class="col-md-2">
+			<img src="img/10.jpg" class="ques_image">
 		</div>
 	</div>
-	<hr>
-	<div class="row" >
-		<div class="col-md-3">
-			<img src="img/5.png" class="ques_image">
-		</div>
-		<div class="col-md-2" style="text-align:right;">
-			<br>bat and
-		</div>
-		<div class="col-md-3" style="text-align:center;">
-			<div id="div3" class="aa" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
-			<div id="div3" class="solve hidden" >ball</div>
-		</div>
-		<div class="col-md-3">
-			<img src="img/6.png" class="ques_image">
-		</div>
-	</div>
-	<hr>
-	<div class="row" >
-		<div class="col-md-3">
-			<img src="img/7.png" class="ques_image">
-		</div>
-		<div class="col-md-2" style="text-align:right;">
-			<br>cats and
-		</div>
-		<div class="col-md-3" style="text-align:center;">
-			<div id="div4" class="aa" ondrop="drop1(event)" ondragover="allowDrop(event)"></div>
-			<div id="div4" class="solve hidden" >dogs</div>
-		</div>
-		<div class="col-md-3">
-			<img src="img/8.png" class="ques_image">
-		</div>
-	</div>
-	<hr>
 	<div class="row">
 		<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:50%;"></center></div>
 		<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:50%;"></center></div>

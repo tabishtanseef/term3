@@ -14,59 +14,65 @@
 <div class="container-fluid" >
 	<div class="row">
 		<div class="col-md-12">
-			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >
-			<!-- <span style="color:#66AE3D;">Good manners— </span>-->
-			Choose and drag the correct magic words.</h4>
+			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >We travel<br>
+			&nbsp; &nbsp; &nbsp; Look at the pictures and complete the sentences. <br>
+			&nbsp; &nbsp; &nbsp; Drag and drop the words in the word box.</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-12" style="background:white; padding:10px; text-align:center;">
+			<span class="ans" id="drag2" draggable="true" ondragstart="drag(event)" >aeroplane</span> &nbsp; &nbsp;
+			<span class="ans" id="drag3" draggable="true" ondragstart="drag(event)" >bus</span> &nbsp; &nbsp;
+			<span class="ans" id="drag5" draggable="true" ondragstart="drag(event)" >car</span> &nbsp; &nbsp;
+			<span class="ans" id="drag1" draggable="true" ondragstart="drag(event)" >ship</span> &nbsp; &nbsp;
+			<span class="ans" id="drag6" draggable="true" ondragstart="drag(event)" >boat</span> &nbsp; &nbsp;
+			<span class="ans" id="drag4" draggable="true" ondragstart="drag(event)" >train</span> &nbsp; &nbsp;
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4" style="margin:auto;">
+			<center>
+				<img src="img/1.png" class="tek"><br>
+				This is a <div id="div1" class="aa" ondrop="drop1(event)" ondragover="allowDrop(event)"></div>
+				<div id="div1" class="solve hidden" >please </div>
+			</center>
+		</div>
+		<div class="col-md-4" style="margin:auto;">
+			<center>
+				<img src="img/2.png" class="tek"><br>
+				This is an <div id="div2" class="aa" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
+				<div id="div2" class="solve hidden" >sorry </div>
+			</center>
+		</div>
+		<div class="col-md-4" style="margin:auto;">
+			<center>
+				<img src="img/3.png" class="tek"><br>
+				This is a <div id="div3" class="aa" ondrop="drop3(event)" ondragover="allowDrop(event)"></div>
+				<div id="div3" class="solve hidden" >hello </div>
+			</center>
 		</div>
 	</div>
 	<div class="row" >
-		<div class="col-md-9" >
-			<div class="row">
-				<div class="col-md-4" style="margin:auto;">
-					<center>
-						<img src="img/1.png" class="tek"><br>
-						<div id="div1" class="aa" ondrop="drop4(event)" ondragover="allowDrop(event)"></div>
-						<div id="div1" class="solve hidden" >please </div>
-					</center>
-				</div>
-				<div class="col-md-4" style="margin:auto;">
-					<center>
-						<img src="img/2.png" class="tek"><br>
-						<div id="div2" class="aa" ondrop="drop3(event)" ondragover="allowDrop(event)"></div>
-						<div id="div2" class="solve hidden" >sorry </div>
-					</center>
-				</div>
-				<div class="col-md-4" style="margin:auto;">
-					<center>
-						<img src="img/3.png" class="tek"><br>
-						<div id="div3" class="aa" ondrop="drop2(event)" ondragover="allowDrop(event)"></div>
-						<div id="div3" class="solve hidden" >hello </div>
-					</center>
-				</div>
-			</div>
-			<div class="row" >
-				<div class="col-md-4" style="margin:auto;">
-					<center>
-						<img src="img/4.png" class="tek"><br>
-						<div id="div4" class="aa" ondrop="drop1(event)" ondragover="allowDrop(event)"></div>
-						<div id="div4" class="solve hidden" >excuse me </div>
-					</center>
-				</div>
-				<div class="col-md-4" style="margin:auto;">
-					<center>
-						<img src="img/5.png" class="tek"><br>
-						<div id="div5" class="aa" ondrop="drop5(event)" ondragover="allowDrop(event)"></div>
-						<div id="div5" class="solve hidden" >thank you </div>
-					</center>
-				</div>
-			</div>
+		<div class="col-md-4" style="margin:auto;">
+			<center>
+				<img src="img/4.png" class="tek"><br>
+				This is a <div id="div4" class="aa" ondrop="drop4(event)" ondragover="allowDrop(event)"></div>
+				<div id="div4" class="solve hidden" >excuse me </div>
+			</center>
 		</div>
-		<div class="col-md-3" style="background:white; padding:10px; text-align:center;"><br>
-			<span class="ans" id="drag2" draggable="true" ondragstart="drag(event)" >hello</span><br><br>
-			<span class="ans" id="drag3" draggable="true" ondragstart="drag(event)" >sorry</span><br><br>
-			<span class="ans" id="drag5" draggable="true" ondragstart="drag(event)" >thank you</span><br><br>
-			<span class="ans" id="drag1" draggable="true" ondragstart="drag(event)" >excuse me</span><br> <br>
-			<span class="ans" id="drag4" draggable="true" ondragstart="drag(event)" >please</span>
+		<div class="col-md-4" style="margin:auto;">
+			<center>
+				<img src="img/5.png" class="tek"><br>
+				This is a <div id="div5" class="aa" ondrop="drop5(event)" ondragover="allowDrop(event)"></div>
+				<div id="div5" class="solve hidden" >thank you </div>
+			</center>
+		</div>
+		<div class="col-md-4" style="margin:auto;">
+			<center>
+				<img src="img/5.png" class="tek"><br>
+				This is a <div id="div6" class="aa" ondrop="drop6(event)" ondragover="allowDrop(event)"></div>
+				<div id="div6" class="solve hidden" >thank you </div>
+			</center>
 		</div>
 	</div>
 	<div class="row">

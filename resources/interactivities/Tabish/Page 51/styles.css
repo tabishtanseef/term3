@@ -15,6 +15,7 @@ body{
 	margin:0px;
 	padding:20px;
 	font-family: "Sehaj" !important;
+	background-image: url('img/b1.png');
 }
 .hidden{
 	display:none;

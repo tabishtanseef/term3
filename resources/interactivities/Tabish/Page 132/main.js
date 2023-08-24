@@ -50,8 +50,17 @@ function drop5(ev) {
   }
   ev.target.appendChild(document.getElementById(data));
 }
+function drop6(ev) {
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  console.log(data);
+  if(data=='drag6'){
+	count++;
+  }
+  ev.target.appendChild(document.getElementById(data));
+}
 function check(){
-	if(count>=5){
+	if(count>=6){
 		var audio = document.getElementById("audio1");
 		audio.play();
 		setTimeout(function(){ 
