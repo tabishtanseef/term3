@@ -19,7 +19,7 @@ function on(a){
 	$('.bis'+a).removeClass('hidden');
 }
 
-const answers = ['5','8','7','2','6','9'];
+const answers = ['12','13','14','15'];
 
 function solve() {
 	$('#submit').css("pointer-events", "none");
@@ -38,7 +38,6 @@ function check() {
 	if(q==1){
 		$(".t_1").removeClass('hidden');
 		$(".c_1").addClass('hidden');
-		bo(1);
 	}else{
 		$(".c_1").removeClass('hidden');
 		$(".t_1").addClass('hidden');
@@ -46,7 +45,6 @@ function check() {
 	if(r==1){
 		$(".t_2").removeClass('hidden');
 		$(".c_2").addClass('hidden');
-		bo(2);
 	}else{
 		$(".c_2").removeClass('hidden');
 		$(".t_2").addClass('hidden');
@@ -54,7 +52,6 @@ function check() {
 	if(s==1){
 		$(".t_3").removeClass('hidden');
 		$(".c_3").addClass('hidden');
-		bo(3);
 	}else{
 		$(".c_3").removeClass('hidden');
 		$(".t_3").addClass('hidden');
@@ -62,7 +59,6 @@ function check() {
 	if(t==1){
 		$(".t_4").removeClass('hidden');
 		$(".c_4").addClass('hidden');
-		bo(4);
 	}else{
 		$(".c_4").removeClass('hidden');
 		$(".t_4").addClass('hidden');

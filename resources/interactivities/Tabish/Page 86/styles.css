@@ -11,7 +11,7 @@ body{
 	margin:0px;
 	padding:10px;
 	font-family: "Sehaj" !important;
-	font-size:30px !important;
+	font-size:20px !important;
 	background-image:url('img/b1.png');
 	background-size:cover;
 }
@@ -22,6 +22,9 @@ h4{
 }
 .let{
 	color:#0166B3;
+}
+.col-md-4{
+	padding-left:10px;
 }
 #welldone{
 	width:50%;
@@ -46,26 +49,31 @@ h4{
 	font-size:30px;
 }
 input{
-	width:45px;
-	height:45px;
+	width:40px;
+	height:40px;
 	border:2px solid #FECA0A;
-	font-size:28px !important;
+	font-size:20px !important;
 	text-align:center;
 	cursor:pointer;
 	background:white;
-	margin:10px !important;
-	margin-top:-90px !important;
 	border-radius:50%;
 }
 .m1{
 	padding:10px;
-	border:2px solid #41C2D5;
-	background:#fff;
+	border:2px solid #F499C2;
+	border-radius:50px;
+	background:#FCE9F1;
+	margin-top:10px !important;
 }
 .m2{
 	padding:10px;
-	border:2px solid #EF59A1;
-	background:#fff;
+	background:#F4F9E8;
+	border:2px solid #D0E39A;
+	border-radius:50px;
+	margin-top:10px !important;
+}
+.ques_image{
+	width:100%;
 }
 .ans{
 	font-size:30px;
@@ -118,7 +126,7 @@ input{
 	padding:20px;
 }
 .tek{
-	width:60%;
+	width:40%;
 	border-radius:20px;
 	margin-bottom:10px;
 }

@@ -1,52 +1,58 @@
-function check(){
-	val1 = $('#1').val();
-	val2 = $('#2').val();
-	val3 = $('#3').val();
-	val4 = $('#4').val();
+const answers = ['3','4','5','6','7','8'];
+
+function solve() {
+	$('#submit').css("pointer-events", "none");
+	$('#submit').css("opacity", "0.7");
+	$("select").css("color","green");
+	$("select").css("border","1px solid green");
 	
-	if(val1!='3'){
-		$("#1").css('border',"3px solid red");
+	let size = answers.length;
+	var i=0;
+	while(i<size){
+		$('#tab'+i).val(answers[i]).change();
+		i++;
 	}
-	if(val2!='3'){
-		$("#2").css('border',"3px solid red");
-	}
-	if(val3!='4'){
-		$("#3").css('border',"3px solid red");
-	}
-	if(val4!='4'){
-		$("#4").css('border',"3px solid red");
-	}
-	if(val1=='3' && val2=='3' && val3=='4' && val4=='4'){
-		i=1;
-		while(i<5){
-			$("#"+i).css('border',"3px solid green");
-			i++;
+}
+function check() {
+	$('select').css('border','2px solid #73DAD6');
+	$("#sol").css("pointer-events", "auto");	
+	let size = answers.length;
+	var i=0;
+	var empty=0;	
+	while(i<size){
+		input_answer = $("#tab"+i).val();
+		console.log(input_answer);
+		if(input_answer=='' || input_answer==null){
+			empty++;
 		}
-		$("#sol").css("pointer-events", "auto");
-		var audio = document.getElementById('audio1');
-		audio.play();
-		setTimeout(function(){ 
-		 $('#blocks').show(); 
-		},500);
+		i++;
+	}
+	if(empty==size){
+		$("#sol").css("pointer-events", "none");
+	}
+	var i=0;
+	var correct=0;
+	while(i<size){
+		input_answer = $("#tab"+i).val();
+		if(input_answer.toLowerCase()!=answers[i]){
+			$('#tab'+i).css("border",'2px solid red');
+		}else{
+			$('#tab'+i).css("border",'2px solid green');
+			correct++;
+		}
+		i++;
+	}
+	if(correct==size){
+		setTimeout(function(){
+			var audio = document.getElementById("audio1");
+			audio.play();
+			$('#blocks').show(); 
+		},1000);
 	}else{
-		var audio = document.getElementById('audio2');
-		audio.play();
 		setTimeout(function(){ 
-			$('#blocks2').show();
+			var audio = document.getElementById("audio2");
+			audio.play();
+			$('#blocks2').show(); 
 		},1000);
 	}
-}
-
-function play(){
-	var audio = document.getElementById('audio3');
-	audio.play();
-}
-function solve(){
-	$('#1').val('3');
-	$('#2').val('3');
-	$('#3').val('4');
-	$('#4').val('4');
-	$('#blocks2').hide();
-	$('#submit').css('pointer-events','none');
-	$('#submit').css('opacity','0.5');
 }
