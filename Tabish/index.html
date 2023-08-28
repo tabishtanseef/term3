@@ -1,0 +1,116 @@
+<html>
+<head>
+<link href="https://fonts.googleapis.com/css?family=Hammersmith+One|Lato" rel="stylesheet">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+<style>
+body{
+background-image:url(img/c.jpg);
+}
+h2, h3{
+background-color:#ffffff8f;
+color:;
+font-size:40px;
+text-align:center;
+padding:8px;
+font-family:'Hammersmith One', sans-serif;
+}
+h4{
+text-align:center;
+font-family:'Hammersmith One', sans-serif;
+font-size:40px;
+}
+.bur{
+border-radius:20px;
+}
+.hidden{
+display:none;
+}
+@media screen and (min-width: 481px) {
+ .bag{
+  margin-top:250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  h2, h3{
+background-color:#ffffff8f;
+color:;
+text-align:center;
+font-size:30px;
+padding:8px;
+font-family:'Hammersmith One', sans-serif;
+}
+}
+</style>
+
+
+</head>
+<body>
+<h2>Click on all the fishes facing left.</h2>
+<br>
+<br>
+<br>
+
+<div class="container-fluid tab1">
+
+
+<div class="row">
+<div class="col-sm-1"   ></div>
+<div class="col-lg-2 col-sm-12"   >
+<center><img id="1" src="img/5.png" style=" width:100%;" onclick="go(1)"></center><center><img class="1 hidden"  src="img/6.png" style=" width:100%;" onclick="bo()"></center><br>
+</div>
+<div class="col-lg-2 col-sm-12 bag"   >
+<center><img id="2" src="img/3.png"  style="width:100%;" onclick="bo(2)"></center><br>
+</div>
+<div class="col-lg-2 col-sm-12"  >
+<center><img id="3" src="img/1.png" style=" width:100%;" onclick="go(3)"></center><center><img class="3 hidden"  src="img/2.png" style=" width:100%;" onclick="bo()"></center><br>
+</div>
+<div class="col-lg-2 col-sm-12 bag"   >
+<center><img id="4" src="img/9.png"  style=" width:100%; " onclick="bo(4)"></center><br>
+</div>
+<div class="col-lg-2 col-sm-12"  >
+<center><img id="5" src="img/7.png" style=" width:100%;" onclick="go(5)"></center><center><img class="5 hidden"  src="img/8.png" style=" width:100%;" onclick="bo()"></center><br>
+</div>
+</div>
+
+
+</div>
+
+<div class="tab hidden">
+	<img  width="100%" height="auto"  src="../../../english/Welldone.gif">
+</div>
+</div>
+<audio src="../../../english/try-again.mp3" id="audio2"></audio>
+<audio src="../../../english/well-done.mp3" id="audio1"></audio>
+</body>
+<script>
+var count=0;
+function bo(a){
+$('#'+a).css('border',"2px red solid");
+$('#'+a).css('border-radius',"30px");
+ var audio = document.getElementById("audio2");
+       audio.play();
+
+     } 
+
+
+function go(a){
+$('#'+a).addClass('hidden');
+$('.'+a).removeClass('hidden');
+ var audio = document.getElementById("audio1");
+       audio.play();
+	   count++;
+if(count==3){	   
+setInterval(function(){ $('.tab1').addClass('hidden')
+$('h2').addClass('hidden')
+$('h3').addClass('hidden')
+$('h4').addClass('hidden')
+	   $('.tab').removeClass('hidden')},1000);
+	   }
+}
+</script>
+
+</html>

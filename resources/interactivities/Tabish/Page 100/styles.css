@@ -11,12 +11,16 @@ body{
 	margin:0px;
 	padding:10px;
 	font-family: "Sehaj" !important;
+	background-image:url('img/b1.png');
+	background-size:cover;
+	font-family: "Sehaj" !important;
 	font-size:20px !important;
 }
 h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
 	letter-spacing:1px;
+	margin-top:10px !important;
 }
 .let{
 	color:#0166B3;
@@ -54,7 +58,6 @@ input{
 	text-align:center;
 	cursor:pointer;
 	background:white;
-	border-radius:50%;
 }
 .m1{
 	padding:10px;
@@ -63,7 +66,7 @@ input{
 }
 .m2{
 	padding:10px;
-	padding-top:10px !important;
+	background:#fff;
 	border:2px solid #EF59A1;
 }
 .ans{

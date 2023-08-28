@@ -1,4 +1,4 @@
-const answers = ['9','6','10','8','1','12','7','8','7','9'];
+const answers = ['3','3','8','5'];
 
 function solve() {
 	$('#submit').css("pointer-events", "none");

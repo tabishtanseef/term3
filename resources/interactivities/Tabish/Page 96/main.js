@@ -1,5 +1,10 @@
-const answers = ['4','2','3','1','6','2'];
-
+const answers = ['2','3','1','6','2'];
+total=0;
+function go(a){
+	$('.ori'+a).addClass('hidden');
+	$('.fake'+a).removeClass('hidden');
+	total++;
+}
 function solve() {
 	$('#submit').css("pointer-events", "none");
 	$('#submit').css("opacity", "0.7");
@@ -11,6 +16,12 @@ function solve() {
 	while(i<size){
 		$('#tab'+i).val(answers[i]).change();
 		i++;
+	}
+	var i=0;
+	while(i<6){
+		i++;
+		$('.ori'+i).addClass('hidden');
+		$('.fake'+i).removeClass('hidden');
 	}
 }
 function check() {
@@ -42,7 +53,7 @@ function check() {
 		}
 		i++;
 	}
-	if(correct==size){
+	if(correct==size && total==5){
 		setTimeout(function(){
 			var audio = document.getElementById("audio1");
 			audio.play();
