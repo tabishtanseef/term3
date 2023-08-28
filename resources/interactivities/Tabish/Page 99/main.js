@@ -1,4 +1,4 @@
-const answers = ['4','2','3','1','6','2'];
+const answers = ['5','4'];
 
 function solve() {
 	$('#submit').css("pointer-events", "none");
@@ -14,6 +14,7 @@ function solve() {
 	}
 }
 function check() {
+
 	$('select').css('border','2px solid #73DAD6');
 	$("#sol").css("pointer-events", "auto");	
 	let size = answers.length;
@@ -34,7 +35,7 @@ function check() {
 	var correct=0;
 	while(i<size){
 		input_answer = $("#tab"+i).val();
-		if(input_answer.toLowerCase()!=answers[i]){
+		if(input_answer!=answers[i]){
 			$('#tab'+i).css("border",'2px solid red');
 		}else{
 			$('#tab'+i).css("border",'2px solid green');

@@ -9,9 +9,11 @@
 }
 body{
 	margin:0px;
-	padding:10px;
+	padding:0px;
 	font-family: "Sehaj" !important;
-	font-size:20px !important;
+	font-size:15px !important;
+	background-image:url('img/b1.png');
+	background-size:cover;
 }
 h4{
 	color:#C529A3 !important;
@@ -21,19 +23,8 @@ h4{
 .let{
 	color:#0166B3;
 }
-.col-md-4{
-	padding-left:10px;
-}
 #welldone{
 	width:50%;
-}
-#div1, #div2, #div3, #div4, #div5  {
-  width: 170px;
-  height: 60px; 
-  padding:2px;
-  display:inline-block;
-  border: 2px solid #000;
-  background:white;
 }
 .text_div{
   display:inline-block;
@@ -47,13 +38,14 @@ h4{
 	font-size:30px;
 }
 input{
-	width:40px;
-	height:40px;
-	border:2px solid #FECA0A;
-	font-size:20px !important;
+	width:45px;
+	height:45px;
+	border:2px dashed #FECA0A;
+	font-size:18px !important;
 	text-align:center;
 	cursor:pointer;
 	background:white;
+	margin-top:10px !important;
 	border-radius:50%;
 }
 .m1{
@@ -63,8 +55,8 @@ input{
 }
 .m2{
 	padding:10px;
-	padding-top:10px !important;
 	border:2px solid #EF59A1;
+	background:#fff;
 }
 .ans{
 	font-size:30px;
@@ -113,14 +105,11 @@ input{
 #submit, #reset, #sol{
 	cursor:pointer;
 }
-.container-fluid{
-	padding:20px;
-}
-.teki{
-	width:60%;
+.container{
+	padding:10px;
 }
 .tek{
-	width:100%;
+	width:80%;
 }
 .lefty{
 	background:#EFF6E8;

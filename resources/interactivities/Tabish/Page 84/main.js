@@ -26,6 +26,12 @@ function on(a){
 const answers = ['16','17','18','19','20'];
 
 function solve() {
+	j=0
+	while(j<=5){
+		$('.blank'+j).addClass('hidden');
+		$('.bis'+j).removeClass('hidden');
+		j++;
+	}
 	$('#submit').css("pointer-events", "none");
 	$('#submit').css("opacity", "0.7");
 	$("select").css("color","green");

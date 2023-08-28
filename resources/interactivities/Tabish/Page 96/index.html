@@ -13,50 +13,57 @@
 <div class="container-fluid" >
 	<div class="row">
 		<div class="col-md-12">
-			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >
-			Look at the pictures in each set. Now count and write the numbers. What did you find?
+			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >Look at the numbers and click to  cross (✘) the pictures. <br>
+			&nbsp; &nbsp; &nbsp; Type to write how many are left. One has been done for you.
 			</h4>
 		</div>
 	</div>
-</div>
-<div class="container" >
 	<div class="row" >
 		<div class="col-md-12" >
-			<div class="row m1">
-				<div class="col-md-12" style="margin:auto; margin-top:-20px;">
+			<div class="row">
+				<div class="col-md-4" style="margin:auto;">
 					<center>
-						<img src="img/1.png" class="tek">
+						<img src="img/1.jpg" class="tek"><br>
+						7 - <span style="color:red;">3</span> = <input type="text" id="tab0" value="4" readonly maxlength="1" autocomplete="off">
 					</center>
 				</div>
-				<div class="col-md-2"></div>
-				<div class="col-md-4">
-					<center><input type="text" id="1" maxlength="1" autocomplete="off"></center>
-				</div>
-				<div class="col-md-4" >
-					<center><input type="text" id="2" maxlength="1" autocomplete="off"></center>
-				</div>
-			</div>
-				<br>
-			<div class="row m2">
-				<div class="col-md-12" style="margin:auto;">
+				<div class="col-md-4" style="margin:auto;">
 					<center>
-						<img src="img/2.png" class="tek">
+						<img src="img/2.jpg" class="tek"><br>
+						6 - <span style="color:red;">4</span> = <input type="text" id="tab1" maxlength="1" autocomplete="off">
 					</center>
 				</div>
-				<div class="col-md-2"></div>
-				<div class="col-md-4">
-					<center><input type="text" id="3" maxlength="1" autocomplete="off"></center>
+				<div class="col-md-4" style="margin:auto;">
+					<center>
+						<img src="img/3.jpg" class="tek"><br>
+						5 - <span style="color:red;">2</span> = <input type="text" id="tab2" maxlength="1" autocomplete="off">
+					</center>
 				</div>
-				<div class="col-md-4">
-					<center><input type="text" id="4" maxlength="1" autocomplete="off"></center>
+				<div class="col-md-4" style="margin:auto;">
+					<center>
+						<img src="img/4.jpg" class="tek"><br>
+						3 - <span style="color:red;">2</span> = <input type="text" id="tab3" maxlength="1" autocomplete="off">
+					</center>
+				</div>
+				<div class="col-md-4" style="margin:auto;">
+					<center>
+						<img src="img/5.jpg" class="tek"><br>
+						8 - <span style="color:red;">2</span> = <input type="text" id="tab4" maxlength="1" autocomplete="off">
+					</center>
+				</div>
+				<div class="col-md-4" style="margin:auto;">
+					<center>
+						<img src="img/6.jpg" class="tek"><br>
+						5 - <span style="color:red;">3</span> = <input type="text" id="tab5" maxlength="1" autocomplete="off">
+					</center>
 				</div>
 			</div>
 		</div>
 	</div>
 	<div class="row">
-		<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:50%;"></center></div>
-		<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:50%;"></center></div>
-		<div class="col-md-4"><center><img id="reset" onclick="window.location.reload()" src="img/reset.png" style="margin-top:10px; width:50%;"></center></div>
+		<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:40%;"></center></div>
+		<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:40%;"></center></div>
+		<div class="col-md-4"><center><img id="reset" onclick="window.location.reload()" src="img/reset.png" style="margin-top:10px; width:40%;"></center></div>
 	</div>
 </div>
 <div id="blocks" style="display:none; margin-top:-400px; z-index:99;">
@@ -67,7 +74,7 @@
 </div>
 <audio src="audio/well-done.mp3" id="audio1"></audio>
 <audio src="audio/try-again.mp3" id="audio2"></audio>
-<audio src="audio/Page-67.mp3" id="audio3"></audio>
+<audio src="audio/Page-96.mp3" id="audio3"></audio>
 </body>
 <script src="main.js"></script>
 </html>
