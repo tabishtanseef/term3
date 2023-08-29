@@ -11,28 +11,25 @@ body{
 	margin:0px;
 	padding:10px;
 	font-family: "Sehaj" !important;
-	font-size:30px !important;
 	background-image:url('img/b1.png');
 	background-size:cover;
+	font-family: "Sehaj" !important;
+	font-size:20px !important;
 }
 h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
 	letter-spacing:1px;
+	margin-top:10px !important;
 }
 .let{
 	color:#0166B3;
 }
+.col-md-4{
+	padding-left:10px;
+}
 #welldone{
 	width:50%;
-}
-#div1, #div2, #div3, #div4, #div5  {
-  width: 170px;
-  height: 60px; 
-  padding:2px;
-  display:inline-block;
-  border: 2px solid #000;
-  background:white;
 }
 .text_div{
   display:inline-block;
@@ -46,26 +43,30 @@ h4{
 	font-size:30px;
 }
 input{
-	width:45px;
-	height:45px;
+	width:40px;
+	height:40px;
 	border:2px solid #FECA0A;
-	font-size:28px !important;
+	font-size:18px !important;
 	text-align:center;
 	cursor:pointer;
 	background:white;
-	margin:10px !important;
-	margin-top:-90px !important;
 	border-radius:50%;
+}
+.middle{
+	font-size:12px;
+	margin-top:-40px !important;
 }
 .m1{
 	padding:10px;
 	border:2px solid #41C2D5;
 	background:#fff;
+	margin-top:5px !important;
 }
 .m2{
 	padding:10px;
-	border:2px solid #EF59A1;
 	background:#fff;
+	border:2px solid #EF59A1;
+	margin-top:5px !important;
 }
 .ans{
 	font-size:30px;
@@ -114,13 +115,11 @@ input{
 #submit, #reset, #sol{
 	cursor:pointer;
 }
-.container-fluid{
-	padding:20px;
+.teki{
+	width:60%;
 }
 .tek{
-	width:60%;
-	border-radius:20px;
-	margin-bottom:10px;
+	width:100%;
 }
 .lefty{
 	background:#EFF6E8;

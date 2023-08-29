@@ -13,44 +13,87 @@
 <div class="container-fluid" >
 	<div class="row">
 		<div class="col-md-12">
-			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >
-			Look at the pictures in each set. Now count and write the numbers. What did you find?
+			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >What have you learnt?<br>
+				&nbsp; &nbsp; &nbsp; Count by 10s and type to write.
 			</h4>
 		</div>
 	</div>
-</div>
-<div class="container" >
 	<div class="row" >
-		<div class="col-md-12" >
-			<div class="row m1">
-				<div class="col-md-12" style="margin:auto; margin-top:-20px;">
-					<center>
-						<img src="img/1.png" class="tek">
-					</center>
-				</div>
-				<div class="col-md-2"></div>
-				<div class="col-md-4">
-					<center><input type="text" id="1" maxlength="1" autocomplete="off"></center>
-				</div>
-				<div class="col-md-4" >
-					<center><input type="text" id="2" maxlength="1" autocomplete="off"></center>
-				</div>
-			</div>
-				<br>
+		<div class="col-md-12" style="margin:auto;" >
 			<div class="row m2">
-				<div class="col-md-12" style="margin:auto;">
-					<center>
-						<img src="img/2.png" class="tek">
-					</center>
+				<div class="col-md-2" style="background-image:url('img/1.png'); background-size:cover;   margin:auto;">
+					<center><br><img src="img/1.png" class="tek" style="visibility:hidden;"></center>
 				</div>
-				<div class="col-md-2"></div>
-				<div class="col-md-4">
-					<center><input type="text" id="3" maxlength="1" autocomplete="off"></center>
+				<div class="col-md-2" style="background-image:url('img/2.png'); background-size:cover;   margin:auto;">
+					<center><br><br><br><br><input type="text" class="penguin" id="tab0" maxlength="2" autocomplete="off" ><br><br></center>
 				</div>
-				<div class="col-md-4">
-					<center><input type="text" id="4" maxlength="1" autocomplete="off"></center>
+				<div class="col-md-2" style="background-image:url('img/3.png'); background-size:cover;   margin:auto;">
+					<center><br><img src="img/1.png" class="tek" style="visibility:hidden;"></center>
+				</div>
+				<div class="col-md-2" style="background-image:url('img/4.png'); background-size:cover;   margin:auto;">
+					<center><br><br><br><br><input type="text" class="penguin" id="tab1" maxlength="2" autocomplete="off" ><br><br></center>
+				</div>
+				<div class="col-md-2" style="background-image:url('img/5.png'); background-size:cover;   margin:auto;">
+					<center><br><img src="img/1.png" class="tek" style="visibility:hidden;"></center>
 				</div>
 			</div>
+		</div>
+	</div>
+	<br>
+	<div class="row">
+		<div class="col-md-12">
+			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >Fill in the gaps.</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4" style="background:#E3F2E7; padding:10px; text-align:center; border-radius:20px;">
+			<input type="text" value="38" class="green green-b" readonly>
+			<input type="text" value="39" class="green green-b" readonly>
+			<input type="text" id="tab2" maxlength="2" autocomplete="off" class="green-b" readonly>
+			<input type="text" value="41" class="green green-b" readonly>
+			<input type="text" value="42" class="green green-b" readonly>
+		</div>
+		<div class="col-md-4">
+			
+		</div>
+		<div class="col-md-4" style="background:#FDE7DC; padding:10px; text-align:center; border-radius:20px;">
+			<input type="text" value="10" class="orange orange-b" readonly>
+			<input type="text" value="20" class="orange orange-b" readonly>
+			<input type="text" id="tab3" maxlength="2" autocomplete="off" class="orange-b" readonly>
+			<input type="text" value="40" class="orange orange-b" readonly>
+			<input type="text" id="tab4" maxlength="2" autocomplete="off" class="orange-b" readonly>
+		</div>
+		<div class="col-md-4">
+			
+		</div>
+		<div class="col-md-4" style="background:#E1F4FC; padding:10px; text-align:center; border-radius:20px;">
+			<input type="text" value="25" class="blue blue-b" readonly>
+			<input type="text" value="30" class="blue blue-b" readonly>
+			<input type="text" value="35" class="blue blue-b" readonly>
+			<input type="text" id="tab5" maxlength="2" autocomplete="off" class="blue-b" readonly>
+		</div>
+		<div class="col-md-4">
+			
+		</div>
+		<div class="col-md-4" style="background:#F1E5F0; padding:10px; text-align:center; border-radius:20px;">
+			<input type="text" value="  10  +  5   = " class="purple purple-b" style="width:150px;" readonly>
+			<input type="text" id="tab8" maxlength="1" autocomplete="off" class="purple-b" readonly>
+		</div>
+		<div class="col-md-4">
+			
+		</div>
+		<div class="col-md-4" style="background:#FEF0E2; padding:10px; text-align:center; border-radius:20px;">
+			<input type="text" value="  7  –  3   = " class="yellow yellow-b" style="width:150px;" readonly>
+			<input type="text" id="tab7" maxlength="1" autocomplete="off" class="yellow-b" readonly>
+		</div>
+		<div class="col-md-4">
+			
+		</div>
+		<div class="col-md-4" style="background:#FCE9F1; padding:10px; text-align:center; border-radius:20px;">
+			<input type="text" value="16" class="pink pink-b" readonly>
+			<input type="text" id="tab6" maxlength="2" autocomplete="off" class="pink-b" readonly>
+			<input type="text" value="20" class="pink pink-b" readonly>
+			<input type="text" value="22" class="pink pink-b" readonly>
 		</div>
 	</div>
 	<div class="row">

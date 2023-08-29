@@ -11,87 +11,70 @@
 	<script  src="https://code.jquery.com/jquery-3.6.3.js" ></script>
 </head>
 <body>
-<br>
 <div class="field">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div class="col-md-12">
 				<h4>
-					<img onclick="play()" src="img/speaker.png" class="speaker" >
-					Look at each picture. Click & colour the correct box.
+					<img onclick="play()" src="img/speaker.png" class="speaker" >Say yes or no. Read and click yes or no.
 				</h4>
 			</div>
 		</div>
 		<div class="mains">
 		<div class="row canvas">
-			<div class="col-md-4">
+			<div class="col-md-12">
 				<center>
-				<img src="img/1.png" class="ques_image"><br>
-				<div class="answers">
-					<input type="text" readonly id="11" onclick="go(this.id)" value="bird">
-					<input type="text" readonly id="1" onclick="go(this.id)" value="birds"><br>
-					<img src="img/tick.png" class="t_1 hidden" style="width:40px;">
-					<img src="img/cross.png" class="c_1 hidden" style="width:40px;">
+				<div class="answers ans1">
+					The number name of 25 is twenty-five. <input type="text" readonly id="1" class="a1" onclick="go(this.id)" value="yes"> <input type="text" readonly id="11" class="a1" onclick="go(this.id)" value="no">
+					<img src="img/tick.png" class="t_1 hidden" style="width:25px;">
+					<img src="img/cross.png" class="c_1 hidden" style="width:25px;">
 				</div>
 				</center>
 			</div>
-			<div class="col-md-4">
+			<div class="col-md-6">
 				<center>
-				<img src="img/2.png" class="ques_image"><br>
-				<div class="answers">
-					<input type="text" readonly id="2" onclick="go(this.id)" value="boat">
-					<input type="text" readonly id="12" onclick="go(this.id)" value="boats"><br>
-					<img src="img/tick.png" class="t_2 hidden" style="width:40px;">
-					<img src="img/cross.png" class="c_2 hidden" style="width:40px;">
+				<br>
+				<div class="answers ans2">
+					100 = 10 <input type="text" readonly id="12" class="a2" onclick="go(this.id)" value="yes"> <input type="text" readonly id="2" class="a2" onclick="go(this.id)" value="no">
+					<img src="img/tick.png" class="t_2 hidden" style="width:25px;">
+					<img src="img/cross.png" class="c_2 hidden" style="width:25px;">
+				</div>
+				<img src="img/img2810.jpg" class="ques_image">
+				<div class="answers ans1">
+					8 + 0 = 8  <input type="text" readonly id="4" class="a1" onclick="go(this.id)" value="yes"> <input type="text" readonly id="14" class="a1" onclick="go(this.id)" value="no">
+					<img src="img/tick.png" class="t_4 hidden" style="width:25px;">
+					<img src="img/cross.png" class="c_4 hidden" style="width:25px;">
 				</div>
 				</center>
 			</div>
-			<div class="col-md-4">
-				<center>
-				<img src="img/3.png" class="ques_image"><br>
-				<div class="answers">
-					<input type="text" readonly id="3" onclick="go(this.id)" value="yak">
-					<input type="text" readonly id="13" onclick="go(this.id)" value="yaks"><br>
-					<img src="img/tick.png" class="t_3 hidden" style="width:40px;">
-					<img src="img/cross.png" class="c_3 hidden" style="width:40px;">
+			<div class="col-md-6">
+				<center><img src="img/img2808.jpg" class="ques_image">
+				<div class="answers ans3">
+					69 < 70  <input type="text" readonly id="3" class="a3" onclick="go(this.id)" value="yes"> <input type="text" readonly id="13" class="a3" onclick="go(this.id)" value="no">
+					<img src="img/tick.png" class="t_3 hidden" style="width:25px;">
+					<img src="img/cross.png" class="c_3 hidden" style="width:25px;">
 				</div>
 				</center>
 			</div>
-			<div class="col-md-4">
-				<center>
-				<img src="img/4.png" class="ques_image"><br>
-				<div class="answers">
-					<input type="text" readonly id="14" onclick="go(this.id)" value="carrot">
-					<input type="text" readonly id="4" onclick="go(this.id)" value="carrots"><br>
-					<img src="img/tick.png" class="t_4 hidden" style="width:40px;">
-					<img src="img/cross.png" class="c_4 hidden" style="width:40px;">
+			<div class="col-md-6">
+				<center><img src="img/img2811.jpg" class="ques_image">
+				<div class="answers ans3">
+					8 - 0 = 8  <input type="text" readonly id="6" class="a3" onclick="go(this.id)" value="yes"> <input type="text" readonly id="16" class="a3" onclick="go(this.id)" value="no">
+					<img src="img/tick.png" class="t_6 hidden" style="width:25px;">
+					<img src="img/cross.png" class="c_6 hidden" style="width:25px;">
 				</div>
 				</center>
 			</div>
-			<div class="col-md-4">
-				<center>
-				<img src="img/5.png" class="ques_image"><br>
-				<div class="answers">
-					<input type="text" readonly id="5" onclick="go(this.id)" value="candle">
-					<input type="text" readonly id="15" onclick="go(this.id)" value="candles"><br>
-					<img src="img/tick.png" class="t_5 hidden" style="width:40px;">
-					<img src="img/cross.png" class="c_5 hidden" style="width:40px;">
-				</div>
-				</center>
-			</div>
-			<div class="col-md-4">
-				<center>
-				<img src="img/6.png" class="ques_image"><br>
-				<div class="answers">
-					<input type="text" readonly id="16" onclick="go(this.id)" value="kite">
-					<input type="text" readonly id="6" onclick="go(this.id)" value="kites"><br>
-					<img src="img/tick.png" class="t_6 hidden" style="width:40px;">
-					<img src="img/cross.png" class="c_6 hidden" style="width:40px;">
+			<div class="col-md-6">
+				<center><img src="img/img2809.jpg" class="ques_image">
+				<div class="answers ans2">
+					4 tens = 40  <input type="text" readonly id="5" class="a2" onclick="go(this.id)" value="yes"> <input type="text" readonly id="15" class="a2" onclick="go(this.id)" value="no">
+					<img src="img/tick.png" class="t_5 hidden" style="width:25px;">
+					<img src="img/cross.png" class="c_5 hidden" style="width:25px;">
 				</div>
 				</center>
 			</div>
 		</div>
-		<br>
 		<div class="row">
 			<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:50%;"></center></div>
 			<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:50%;"></center></div>

@@ -9,9 +9,9 @@
 }
 body{
 	margin:0px;
-	padding:10px;
+	padding:0px;
 	font-family: "Sehaj" !important;
-	font-size:30px !important;
+	font-size:15px !important;
 	background-image:url('img/b1.png');
 	background-size:cover;
 }
@@ -26,35 +26,51 @@ h4{
 #welldone{
 	width:50%;
 }
-#div1, #div2, #div3, #div4, #div5  {
-  width: 170px;
-  height: 60px; 
-  padding:2px;
-  display:inline-block;
-  border: 2px solid #000;
-  background:white;
+.green{
+	background: #71BF44;
+	color:white;
 }
-.text_div{
-  display:inline-block;
-  width: 100px;
-  height: 60px; 
-  display:inline-block;
-  border: 2px solid #000;
-  background:white;
+.green-b{
+	border:2px solid #71BF44;
+}
+.red{
+	background: #EE1D23;
+	color:white;
+}
+.red-b{
+	border:2px solid #EE1D23;
+}
+.blue{
+	background: #00AEEF;
+	color:white;
+}
+.blue-b{
+	border:2px solid #00AEEF;
+}
+.orange{
+	background: #F58220;
+	color:white;
+}
+.orange-b{
+	border:2px solid #F58220;
+}
+.purple{
+	background: #C656A0;
+	color:white;
+}
+.purple-b{
+	border:2px solid #C656A0;
 }
 .solve{
 	font-size:30px;
 }
 input{
-	width:45px;
-	height:45px;
-	border:2px solid #FECA0A;
-	font-size:28px !important;
+	width:35px;
+	height:35px;
+	font-size:16px !important;
 	text-align:center;
 	cursor:pointer;
 	background:white;
-	margin:10px !important;
-	margin-top:-90px !important;
 	border-radius:50%;
 }
 .m1{
@@ -115,11 +131,10 @@ input{
 	cursor:pointer;
 }
 .container-fluid{
-	padding:20px;
+	padding:10px;
 }
 .tek{
-	width:60%;
-	border-radius:20px;
+	width:100%;
 	margin-bottom:10px;
 }
 .lefty{

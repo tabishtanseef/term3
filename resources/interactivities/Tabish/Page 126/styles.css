@@ -11,7 +11,7 @@ body{
 	margin:0px;
 	padding:10px;
 	font-family: "Sehaj" !important;
-	font-size:30px !important;
+	font-size:15px !important;
 	background-image:url('img/b1.png');
 	background-size:cover;
 }
@@ -26,36 +26,63 @@ h4{
 #welldone{
 	width:50%;
 }
-#div1, #div2, #div3, #div4, #div5  {
-  width: 170px;
-  height: 60px; 
-  padding:2px;
-  display:inline-block;
-  border: 2px solid #000;
-  background:white;
+.green{
+	background: #39B97A;
+	color:white;
 }
-.text_div{
-  display:inline-block;
-  width: 100px;
-  height: 60px; 
-  display:inline-block;
-  border: 2px solid #000;
-  background:white;
+.green-b{
+	border:2px solid #39B97A;
+}
+.pink{
+	background: #F171AB;
+	color:white;
+}
+.pink-b{
+	border:2px solid #F171AB;
+}
+.blue{
+	background: #00BAF1;
+	color:white;
+}
+.blue-b{
+	border:2px solid #00BAF1;
+}
+.orange{
+	background: #F36F51;
+	color:white;
+}
+.orange-b{
+	border:2px solid #F36F51;
+}
+.yellow{
+	background: #F9A64A;
+	color:white;
+}
+.yellow-b{
+	border:2px solid #F9A64A;
+}
+.purple{
+	background: #C656A0;
+	color:white;
+}
+.purple-b{
+	border:2px solid #C656A0;
 }
 .solve{
 	font-size:30px;
 }
+.penguin{
+	margin-top:5px !important;
+	border-radius:50%;
+}
 input{
-	width:45px;
-	height:45px;
-	border:2px solid #FECA0A;
-	font-size:28px !important;
+	width:50px;
+	height:50px;
+	font-size:24px !important;
 	text-align:center;
 	cursor:pointer;
 	background:white;
-	margin:10px !important;
-	margin-top:-90px !important;
-	border-radius:50%;
+	border-radius:10px;
 }
 .m1{
 	padding:10px;
@@ -115,11 +142,10 @@ input{
 	cursor:pointer;
 }
 .container-fluid{
-	padding:20px;
+	padding:10px;
 }
 .tek{
-	width:60%;
-	border-radius:20px;
+	width:100%;
 	margin-bottom:10px;
 }
 .lefty{

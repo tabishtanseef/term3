@@ -82,8 +82,6 @@ function solve(){
 		//$(".t_"+a).removeClass('hidden');
 		b = a+10;
 		c = b+100;
-		$('#'+c).css('color','black');
-		$('#'+b).css('color','black');
 		$('#'+a).css('color','white');
 		$('#'+a).css('background','green');
 		a++;
@@ -93,26 +91,9 @@ function solve(){
 	$('#submit').css('opacity','0.5');
 }
 function go(a){
-	$('#'+a).css('background','#FECA0A');
+	$('#'+a).css('background','cyan');
 	$('#'+a).css('pointer-events','none');
-	if(a==1 || a==2 || a==3 || a==4 || a==5 || a==6){
-		b = parseFloat(a)+10;
-		c = parseFloat(b)+100;
-		$('#'+b).css('pointer-events','none');
-		$('#'+c).css('pointer-events','none');
-	}else if(a>100){
-		b = parseFloat(a)-100;
-		c = parseFloat(b)-10;
-		$('#'+b).css('pointer-events','none');
-		$('#'+c).css('pointer-events','none');
-	}else{
-		b = parseFloat(a)+100;
-		c = parseFloat(a)-10;
-		$('#'+b).css('pointer-events','none');
-		$('#'+c).css('pointer-events','none');
-	}
 	
-	$('#'+a).css('pointer-events','none');
 	if(a==1){
 		q++;
 	}
@@ -133,11 +114,5 @@ function go(a){
 	}
 }
 function bo(a){
-
-	b = a+10;
-	c = b+100;
-	$('#'+c).css('color','black');
-	$('#'+b).css('color','black');
-	$('#'+a).css('color','green');
-	$('#'+a).css('border','5px solid green');
+	$('#'+a).css('background','green');
 }
