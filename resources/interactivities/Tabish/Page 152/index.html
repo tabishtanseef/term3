@@ -1,0 +1,88 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Dig deep</title>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script  src="https://code.jquery.com/jquery-3.6.3.js" ></script>
+	<style>
+body{
+	background-image: url('img/b1.png');
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+#dim{
+	cursor:url(img/brush.png),pointer;
+}
+td{
+	text-align:center;
+}
+.hidden{
+	display:none;
+}
+
+
+</style>
+</head>
+<body>
+<br>
+<div class="container-fluid" style="z-index:-10000 !important;">
+	<div class="row">
+		<div class="col-md-12">
+			<h4><img onclick="play()" src="img/speaker.png" class="speaker" >Fill in the correct colours in the traffic light.</h4>
+		</div>
+	</div>
+	<br>
+	<br>
+	<div class="row" id="dim">
+		<div class="col-md-2"></div>
+		<div class="col-md-3">
+			<div class="row">
+				<div class="big_screen">
+					<div class="col-sm-12" id="11" onclick="colorpick(11)">
+						<div  style="margin:5%; padding:30px; height:100px; width:100px; border-radius:50%; background-color:yellow; text-align:center;"></div>
+					</div><br>
+					<div class="col-sm-12" id="13" onclick="colorpick(13)">
+						<div  style="margin:5%; padding:30px; height:100px; width:100px; border-radius:50%; background-color:#05ce00; text-align:center;"></div>
+					</div><br>
+					<div class="col-sm-12" id="12" onclick="colorpick(12)">
+						<div  style="margin:5%; padding:30px; height:100px; width:100px; border-radius:50%; background-color:red; text-align:center;"></div>
+					</div><br>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-7" >
+			<center>
+			<img src="img/0.png" id="0" onclick="go(0)" >
+			<img src="img/1.png" id="1" class="hidden" >
+			<img src="img/2.png" id="3" onclick="go(3)" >
+			<img src="img/3.png" id="4" class="hidden"  >
+			<img src="img/4.png" id="5" onclick="go(5)" >
+			<img src="img/5.png" id="6" class="hidden"  >
+			</center>
+		</div>
+	</div>
+	<br>	
+	<div class="row">
+		<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:40%;"></center></div>
+		<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:40%;"></center></div>
+		<div class="col-md-4"><center><img id="reset" onclick="window.location.reload()" src="img/reset.png" style="margin-top:10px; width:40%;"></center></div>
+	</div>
+</div>
+
+<div id="blocks" style="display:none; margin-top:-500px; z-index:10000;">
+	<center><img src="img/Welldone.gif" id="welldone"></center>
+</div>
+<div id="blocks2" style="display:none; margin-top:-500px; z-index:10000;">
+	<center><img src="img/TryAgain.gif" style="width:300px;"></center>
+</div>
+<audio src="audio/well-done.mp3" id="audio1"></audio>
+<audio src="audio/try-again.mp3" id="audio2"></audio>
+<audio src="audio/Page-38.mp3" id="audio3"></audio>
+</body>
+<script src="main.js"></script>
+</html>

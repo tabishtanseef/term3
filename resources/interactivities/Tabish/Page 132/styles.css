@@ -32,10 +32,20 @@ h4{
 #div1, #div2, #div3, #div4, #div5, #div6  {
   width: 100px;
   height: 30px; 
-  padding-bottom:0px;
+  padding-bottom:10px;
   border-bottom: 2px solid #000;
-  background:white;
   display:inline-block;
+}
+.answer{
+	border-radius:20px;
+}
+.ans1{
+	background:#E1F4FC;
+	border: 2px dotted #39BFF2;
+}
+.ans2{
+	background:#FDE7DC;
+	border: 2px dotted #F6A395;
 }
 .solve{
 	font-size:20px;

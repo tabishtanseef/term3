@@ -1,52 +1,91 @@
-function check(){
-	val1 = $('#1').val();
-	val2 = $('#2').val();
-	val3 = $('#3').val();
-	val4 = $('#4').val();
-	
-	if(val1!='3'){
-		$("#1").css('border',"3px solid red");
+var q = 0;
+var t = 0;
+function on(a){
+	if(a==1){
+		q=1;
 	}
-	if(val2!='3'){
-		$("#2").css('border',"3px solid red");
+	else {
+		t++;
 	}
-	if(val3!='4'){
-		$("#3").css('border',"3px solid red");
-	}
-	if(val4!='4'){
-		$("#4").css('border',"3px solid red");
-	}
-	if(val1=='3' && val2=='3' && val3=='4' && val4=='4'){
-		i=1;
-		while(i<5){
-			$("#"+i).css('border',"3px solid green");
-			i++;
-		}
-		$("#sol").css("pointer-events", "auto");
-		var audio = document.getElementById('audio1');
-		audio.play();
-		setTimeout(function(){ 
-		 $('#blocks').show(); 
-		},500);
-	}else{
-		var audio = document.getElementById('audio2');
-		audio.play();
-		setTimeout(function(){ 
-			$('#blocks2').show();
-		},1000);
-	}
+	$('.blank'+a).addClass('hidden');
+	$('.bis'+a).removeClass('hidden');
 }
 
-function play(){
-	var audio = document.getElementById('audio3');
-	audio.play();
+const answers = ['1','7'];
+
+function solve() {
+	j=0
+	while(j<9){
+		$('.blank'+j).addClass('hidden');
+		$('.bis'+j).removeClass('hidden');
+		j++;
+	}
+	$('#submit').css("pointer-events", "none");
+	$('#submit').css("opacity", "0.7");
+	$("select").css("color","green");
+	$("select").css("border","1px solid green");
+	
+	let size = answers.length;
+	var i=0;
+	while(i<size){
+		$('#tab'+i).val(answers[i]).change();
+		i++;
+	}
 }
-function solve(){
-	$('#1').val('3');
-	$('#2').val('3');
-	$('#3').val('4');
-	$('#4').val('4');
-	$('#blocks2').hide();
-	$('#submit').css('pointer-events','none');
-	$('#submit').css('opacity','0.5');
+function check() {
+	if(q==1){
+		$(".t_1").removeClass('hidden');
+		$(".c_1").addClass('hidden');
+	}else{
+		$(".c_1").removeClass('hidden');
+		$(".t_1").addClass('hidden');
+	}
+	if(t==7){
+		$(".t_2").removeClass('hidden');
+		$(".c_2").addClass('hidden');
+	}else{
+		$(".c_2").removeClass('hidden');
+		$(".t_2").addClass('hidden');
+	}
+	$('select').css('border','2px solid #73DAD6');
+	$("#sol").css("pointer-events", "auto");	
+	let size = answers.length;
+	var i=0;
+	var empty=0;	
+	while(i<size){
+		input_answer = $("#tab"+i).val();
+		console.log(input_answer);
+		if(input_answer=='' || input_answer==null){
+			empty++;
+		}
+		i++;
+	}
+	if(empty==size){
+		$("#sol").css("pointer-events", "none");
+	}
+	var i=0;
+	var correct=0;
+	while(i<size){
+		input_answer = $("#tab"+i).val();
+		if(input_answer!=answers[i]){
+			$('#tab'+i).css("border",'2px solid red');
+		}else{
+			$('#tab'+i).css("border",'2px solid green');
+			correct++;
+		}
+		i++;
+	}
+	if(correct==size && q==1 && t==7){
+		setTimeout(function(){
+			var audio = document.getElementById("audio1");
+			audio.play();
+			$('#blocks').show(); 
+		},1000);
+	}else{
+		setTimeout(function(){ 
+			var audio = document.getElementById("audio2");
+			audio.play();
+			$('#blocks2').show(); 
+		},1000);
+	}
 }

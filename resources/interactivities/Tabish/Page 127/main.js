@@ -5,7 +5,7 @@ var t = 0;
 var u = 0;
 
 var tabish = 0;
-
+var count=0;
 function on(a,b){
 	console.log('Tabihs',tabish);
 	console.log('a',a);
@@ -17,6 +17,7 @@ function on(a,b){
 		if(tabish==a){
 			$('.blank'+a).addClass('hidden');
 			$('.bis'+a).removeClass('hidden');
+			count++;
 		}else{
 			tabish = a;
 			$("#"+b+a).css("pointer-events", "auto");
@@ -28,88 +29,19 @@ const answers = ['16','17','18','19','20'];
 
 function solve() {
 	j=0
-	while(j<=5){
+	while(j<=12){
 		$('.blank'+j).addClass('hidden');
 		$('.bis'+j).removeClass('hidden');
 		j++;
 	}
 	$('#submit').css("pointer-events", "none");
 	$('#submit').css("opacity", "0.7");
-	$("select").css("color","green");
-	$("select").css("border","1px solid green");
-	
-	let size = answers.length;
-	var i=0;
-	while(i<size){
-		$('#tab'+i).val(answers[i]).change();
-		i++;
-	}
 }
 function check() {
-	if(q==1){
-		$(".t_1").removeClass('hidden');
-		$(".c_1").addClass('hidden');
-	}else{
-		$(".c_1").removeClass('hidden');
-		$(".t_1").addClass('hidden');
-	}
-	if(r==1){
-		$(".t_2").removeClass('hidden');
-		$(".c_2").addClass('hidden');
-	}else{
-		$(".c_2").removeClass('hidden');
-		$(".t_2").addClass('hidden');
-	}
-	if(s==1){
-		$(".t_3").removeClass('hidden');
-		$(".c_3").addClass('hidden');
-	}else{
-		$(".c_3").removeClass('hidden');
-		$(".t_3").addClass('hidden');
-	}
-	if(t==1){
-		$(".t_4").removeClass('hidden');
-		$(".c_4").addClass('hidden');
-	}else{
-		$(".c_4").removeClass('hidden');
-		$(".t_4").addClass('hidden');
-	}
-	if(u==1){
-		$(".t_5").removeClass('hidden');
-		$(".c_5").addClass('hidden');
-	}else{
-		$(".c_5").removeClass('hidden');
-		$(".t_5").addClass('hidden');
-	}
 	$('select').css('border','2px solid #73DAD6');
 	$("#sol").css("pointer-events", "auto");	
-	let size = answers.length;
-	var i=0;
-	var empty=0;	
-	while(i<size){
-		input_answer = $("#tab"+i).val();
-		console.log(input_answer);
-		if(input_answer=='' || input_answer==null){
-			empty++;
-		}
-		i++;
-	}
-	if(empty==size){
-		$("#sol").css("pointer-events", "none");
-	}
-	var i=0;
-	var correct=0;
-	while(i<size){
-		input_answer = $("#tab"+i).val();
-		if(input_answer!=answers[i]){
-			$('#tab'+i).css("border",'2px solid red');
-		}else{
-			$('#tab'+i).css("border",'2px solid green');
-			correct++;
-		}
-		i++;
-	}
-	if(correct==size && q==1 && r==1 && s==1 && t==1 && u==1){
+	
+	if(count==6){
 		setTimeout(function(){
 			var audio = document.getElementById("audio1");
 			audio.play();

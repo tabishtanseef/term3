@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title></title>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+	<link href="styles2.css" type="text/css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.js" ></script>
+</head>
+<body>
+<div class="container-fluid" >
+	<div class="row">
+		<div class="col-md-12">
+			<h4><img onclick="play(1)" src="img/speaker.png" class="speaker">Step by step<br>
+			&nbsp; &nbsp; &nbsp; Count by 2s and colour the numbers on the table.
+			</h4>
+		</div>
+	</div>
+</div>
+<div class="container" >
+	<div class="row" >
+		<div class="col-md-12">
+			<center>
+				<input type="text" value="26" id="26" onclick="go(this.id)" readonly><input type="text" value="27" readonly><input type="text" value="28" id="28" onclick="go(this.id)" readonly><input type="text" value="29" readonly><input type="text" value="30" id="30" onclick="go(this.id)" readonly><input type="text" value="31" readonly><input type="text" value="32" id="32" onclick="go(this.id)" readonly><input type="text" value="33" readonly><input type="text" value="34" id="34" onclick="go(this.id)" readonly><input type="text" value="35" readonly><input type="text" value="36" id="36" onclick="go(this.id)" readonly><br>
+				<input type="text" value="37" readonly><input type="text" value="38" id="38" onclick="go(this.id)" readonly><input type="text" value="39" readonly><input type="text" value="40" id="40" onclick="go(this.id)" readonly><input type="text" value="41" readonly><input type="text" value="42" id="42" onclick="go(this.id)" readonly><input type="text" value="43" readonly><input type="text" value="44" id="44" onclick="go(this.id)" readonly><input type="text" value="45" readonly><input type="text" value="46" id="46" onclick="go(this.id)" readonly><input type="text" value="47" readonly><br>
+				<input type="text" value="48" id="48" onclick="go(this.id)" readonly><input type="text" value="49" readonly><input type="text" value="50" id="50" onclick="go(this.id)" readonly><input type="text" value="51" readonly><input type="text" value="52" id="52" onclick="go(this.id)" readonly><input type="text" value="53" readonly><input type="text" value="54" id="54" onclick="go(this.id)" readonly><input type="text" value="55" readonly><input type="text" value="56" id="56" onclick="go(this.id)" readonly><input type="text" value="57" readonly><input type="text" value="58" id="58" onclick="go(this.id)" readonly>
+			</center>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:50%;"></center></div>
+		<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:50%;"></center></div>
+		<div class="col-md-4"><center><img id="reset" onclick="window.location.reload()" src="img/reset.png" style="margin-top:10px; width:50%;"></center></div>
+	</div>
+</div>
+<div id="blocks" style="display:none; margin-top:-300px; z-index:99;">
+	<center><img src="img/Welldone.gif" id="welldone"></center>
+</div>
+<div id="blocks2" style="display:none; margin-top:-300px; z-index:99;">
+	<center><img src="img/TryAgain.gif" style="width:300px;"></center>
+</div>
+<br>
+<div class="field">
+	<div class="row">
+		<div class="col-md-12">
+			<h4>
+				<img onclick="play(2)" src="img/speaker.png" class="speaker" >Write the numbers that you have coloured.
+			</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-1"></div>
+		<div class="col-md-8">
+			<img src="img/1.jpg" id="scream" class="hidden" style="width:100px;">
+			<center><canvas id="canvas" class="canvas"></canvas></center>
+		</div>
+		<div class="col-md-1"></div>
+		<div class="col-md-2">
+			<div class="tools">
+				<div onClick="change_color(this)" class="color-field" style="background:#ff0000;"></div><br>
+				<div onClick="change_color(this)" class="color-field" style="background:#0000ff;"></div><br>
+				<div onClick="change_color(this)" class="color-field" style="background:#00ff00;"></div><br>
+				<div onClick="change_color(this)" class="color-field" style="background:#ffff00;"></div><br>
+				<input onInput="draw_color = this.value" id="c_p" type="color" class="color-picker"><br>
+				<input onInput="draw_width = this.value" type="range" min="1" max="50" value="1" class="pen-range"><br>
+				<button onclick="pen()" type="button" class="button">Brush</button><br>
+				<button onclick="window.location.reload()" type="button" class="button">Clear</button>
+			</div>
+		</div>
+	</div>
+</div>
+<audio src="audio/well-done.mp3" id="audio1"></audio>
+<audio src="audio/try-again.mp3" id="audio2"></audio>
+<audio src="audio/Page-113A.mp3" id="audio3"></audio>
+<audio src="audio/Page-113B.mp3" id="audio4"></audio>
+</body>
+<script src="main.js"></script>
+<script src="main2.js"></script>
+</html>

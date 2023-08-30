@@ -1,0 +1,45 @@
+<!doctype html>
+
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Draw Butterflies</title>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script  src="https://code.jquery.com/jquery-3.6.3.js" ></script>
+</head>
+<body>
+	<div class="field">
+		<div class="row">
+		<div class="col-md-12">
+			<h4>
+				<img onclick="play()" src="img/speaker.png" class="speaker" >What is your favourite colour?<br>
+				&nbsp; &nbsp; &nbsp; Draw an object of your choice and colour it.
+			</h4>
+		</div>
+		<div class="col-md-12">
+			<div class="tools">
+				<div onClick="change_color(this)" class="color-field" style="background:#ff0000;"></div>
+				<div onClick="change_color(this)" class="color-field" style="background:#0000ff;"></div>
+				<div onClick="change_color(this)" class="color-field" style="background:#00ff00;"></div>
+				<div onClick="change_color(this)" class="color-field" style="background:#ffff00;"></div>
+				<input onInput="draw_color = this.value" id="c_p" type="color" class="color-picker">
+				<input onInput="draw_width = this.value" type="range" min="1" max="50" value="1" class="pen-range">
+		
+				<button onclick="pen()" type="button" class="button">Pen</button>
+				<button onclick="erase()" type="button" class="button">Eraser</button>
+				<!-- <button onclick="undo_last()" type="button" class="button">Undo</button> -->
+				<button onclick="clear_canvas()" type="button" class="button">Clear</button>
+			</div>
+		</div>
+		</div>
+		<div class="col-md-12">
+			<center><canvas id="canvas" class="canvas"></canvas></center>
+		</div>
+	</div>
+<audio src="audio/Page-151.mp3" id="audio3"></audio>
+</body>
+<script src="main.js"></script>
+</html>

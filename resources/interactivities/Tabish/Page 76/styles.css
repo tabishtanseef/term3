@@ -9,9 +9,9 @@
 }
 body{
 	margin:0px;
-	padding:10px;
+	padding:0px;
 	font-family: "Sehaj" !important;
-	font-size:30px !important;
+	font-size:15px !important;
 	background-image:url('img/b1.png');
 	background-size:cover;
 }
@@ -49,12 +49,10 @@ input{
 	width:45px;
 	height:45px;
 	border:2px solid #FECA0A;
-	font-size:28px !important;
+	font-size:20px !important;
 	text-align:center;
 	cursor:pointer;
 	background:white;
-	margin:10px !important;
-	margin-top:-90px !important;
 	border-radius:50%;
 }
 .m1{
@@ -63,9 +61,7 @@ input{
 	background:#fff;
 }
 .m2{
-	padding:10px;
-	border:2px solid #EF59A1;
-	background:#fff;
+	border-right:2px solid #EF59A1;
 }
 .ans{
 	font-size:30px;
@@ -115,11 +111,10 @@ input{
 	cursor:pointer;
 }
 .container-fluid{
-	padding:20px;
+	padding:10px;
 }
 .tek{
-	width:60%;
-	border-radius:20px;
+	width:100%;
 	margin-bottom:10px;
 }
 .lefty{

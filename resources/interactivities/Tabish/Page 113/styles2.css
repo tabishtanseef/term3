@@ -1,0 +1,81 @@
+@font-face {
+  font-family: "Sehaj";
+  src: url('All Fonts/Sehaj-ENG-Bold.otf');
+}
+h5{
+	color:#C529A3 !important;
+	font-family: "Sehaj";
+	letter-spacing:1px;
+}
+.let{
+	color:#0166B3;
+}
+body{
+	margin:0px;
+	padding:20px;
+	background-image:url('img/b1.png');
+	background-size:cover;
+}
+.hidden{
+	display:none;
+}
+#submit, #reset, #sol{
+	cursor:pointer;
+}
+.canvas{
+	cursor: url(img/brush.png), auto;
+}
+.speaker{
+	width:30px; 
+	height:30px; 
+	margin-right:10px;
+	margin-left:10px;
+	cursor:pointer;
+}
+.mains{
+	border-radius:50px;
+	border: 5px dashed #F171AB;
+	background:#fff;
+	padding:20px;
+}
+.tools{
+	
+	margin-top: 15px;
+}
+
+.tools .color-field{
+	height:40px;
+	width:40px;
+	min-height:40px;
+	min-width:40px;
+	cursor:pointer;
+	display:inline-block;
+	box-sizing: border-box;
+	border-radius:50%;
+	border: 2px solid white;
+	align-self: center;
+	
+}
+.tools .button{
+	align-self: center;
+	width: 100px;
+	height: 40px;
+	border: 2px solid white;
+	cursor:pointer;
+	color:white;
+	background:#222;
+	font-weight:bold;
+	margin: 0 10px;
+}
+
+.color-picker{
+	align-self:center;
+	margin: 0 10px;
+	height: 50px;
+}
+
+.pen-range{
+	align-self:center;
+	margin: 0 10px;
+	height: 50px;
+}
