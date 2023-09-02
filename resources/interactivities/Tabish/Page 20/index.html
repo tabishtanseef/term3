@@ -11,94 +11,95 @@
 	<script  src="https://code.jquery.com/jquery-3.6.3.js" ></script>
 </head>
 <body>
-	<div class="container-fluid field">
-		<div class="row">
-			<div class="col-md-12">
-				<h4>
-					<img onclick="play()" src="img/speaker.png" class="speaker" >Trace the sentences from the story you have just read. <br>
-					&nbsp; &nbsp; &nbsp; Read them aloud.
-				</h4>
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-12 field">
+			<div class="row">
+				<div class="col-md-12">
+					<h4>
+						<img onclick="play()" src="img/speaker.png" class="speaker" >Trace the sentences from the story you have just read. <br>
+						&nbsp; &nbsp; &nbsp; Read them aloud.
+					</h4>
+				</div>
+				<div class="col-md-12">
+					<div class="tools">
+						<div onClick="change_color(this)" class="color-field" style="background:#ff0000;"></div>
+						<div onClick="change_color(this)" class="color-field" style="background:#0000ff;"></div>
+						<div onClick="change_color(this)" class="color-field" style="background:#00ff00;"></div>
+						<div onClick="change_color(this)" class="color-field" style="background:#ffff00;"></div>
+						<input onInput="draw_color = this.value" id="c_p" type="color" class="color-picker">
+						<input onInput="draw_width = this.value" type="range" min="1" max="50" value="1" class="pen-range">
+						<button onclick="location.reload()" type="button" class="button">Reset</button>
+					</div>
+				</div>
 			</div>
-			<div class="col-md-12">
-				<div class="tools">
-					<div onClick="change_color(this)" class="color-field" style="background:#ff0000;"></div>
-					<div onClick="change_color(this)" class="color-field" style="background:#0000ff;"></div>
-					<div onClick="change_color(this)" class="color-field" style="background:#00ff00;"></div>
-					<div onClick="change_color(this)" class="color-field" style="background:#ffff00;"></div>
-					<input onInput="draw_color = this.value" id="c_p" type="color" class="color-picker">
-					<input onInput="draw_width = this.value" type="range" min="1" max="50" value="1" class="pen-range">
-					<button onclick="location.reload()" type="button" class="button">Reset</button>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="row">
+						<div class="col-md-9">
+							<center>
+							<img src="img/1.jpg" id="scream" class="hidden">
+							<canvas id="canvas" class="canvas"></canvas> <br>
+							</center/>
+						</div>
+						<div class="col-md-3">
+							<button onclick="undo_last()" type="button" class="button clear" >Clear</button>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-9">
+							<center>
+							<img src="img/2.jpg" id="scream2" class="hidden">
+							<canvas id="canvas2" class="canvas"></canvas> <br>
+							</center/>
+						</div>
+						<div class="col-md-3">
+							<button onclick="undo_last2()" type="button" class="button clear" >Clear</button>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-9">
+							<center>
+							<img src="img/3.jpg" id="scream3" class="hidden">
+							<canvas id="canvas3" class="canvas"></canvas> <br>
+							</center/>
+						</div>
+						<div class="col-md-3">
+							<button onclick="undo_last3()" type="button" class="button clear" >Clear</button>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-9">
+							<center>
+							<img src="img/4.jpg" id="scream4" class="hidden">
+							<canvas id="canvas4" class="canvas"></canvas> <br>
+							</center/>
+						</div>
+						<div class="col-md-3">
+							<button onclick="undo_last4()" type="button" class="button clear" >Clear</button>
+						</div>
+					</div>
+					<br>
+					<div class="row">
+						<div class="col-md-9">
+							<center>
+							<img src="img/5.jpg" id="scream5" class="hidden">
+							<canvas id="canvas5" class="canvas"></canvas> <br>
+							</center/>
+						</div>
+						<div class="col-md-3">
+							<button onclick="undo_last5()" type="button" class="button clear" >Clear</button>
+						</div>
+					</div>
+					<br>
 				</div>
 			</div>
 		</div>
 	</div>
-	<br>
-	<div class="container-fluid field">
-		<div class="row">
-			<div class="col-md-12">
-				<div class="row">
-					<div class="col-md-9">
-						<center>
-						<img src="img/1.jpg" id="scream" class="hidden">
-						<canvas id="canvas" class="canvas"></canvas> <br>
-						</center/>
-					</div>
-					<div class="col-md-3">
-						<button onclick="undo_last()" type="button" class="button clear" >Clear</button>
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-md-9">
-						<center>
-						<img src="img/2.jpg" id="scream2" class="hidden">
-						<canvas id="canvas2" class="canvas"></canvas> <br>
-						</center/>
-					</div>
-					<div class="col-md-3">
-						<button onclick="undo_last2()" type="button" class="button clear" >Clear</button>
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-md-9">
-						<center>
-						<img src="img/3.jpg" id="scream3" class="hidden">
-						<canvas id="canvas3" class="canvas"></canvas> <br>
-						</center/>
-					</div>
-					<div class="col-md-3">
-						<button onclick="undo_last3()" type="button" class="button clear" >Clear</button>
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-md-9">
-						<center>
-						<img src="img/4.jpg" id="scream4" class="hidden">
-						<canvas id="canvas4" class="canvas"></canvas> <br>
-						</center/>
-					</div>
-					<div class="col-md-3">
-						<button onclick="undo_last4()" type="button" class="button clear" >Clear</button>
-					</div>
-				</div>
-				<br>
-				<div class="row">
-					<div class="col-md-9">
-						<center>
-						<img src="img/5.jpg" id="scream5" class="hidden">
-						<canvas id="canvas5" class="canvas"></canvas> <br>
-						</center/>
-					</div>
-					<div class="col-md-3">
-						<button onclick="undo_last5()" type="button" class="button clear" >Clear</button>
-					</div>
-				</div>
-				<br>
-			</div>
-		</div>
-	</div>
+</div>
 <audio src="audio/Page-20.mp3" id="audio3"></audio>
 </body>
 <script src="main.js"></script>

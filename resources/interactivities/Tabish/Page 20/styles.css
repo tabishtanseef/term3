@@ -6,6 +6,7 @@ h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj";
 	letter-spacing:1px;
+	line-height:40px !important;
 }
 .let{
 	color:#0166B3;
@@ -15,6 +16,8 @@ body{
 	margin:0px;
 	padding:20px;
 	font-family: "Sehaj" !important;
+	background-image:url('img/img346.jpg');
+	background-size:cover;
 }
 .hidden{
 	display:none;

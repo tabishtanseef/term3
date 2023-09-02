@@ -1,4 +1,4 @@
-const answers = ['2','3','1','6','2'];
+const answers = ['2','3','2','6','2'];
 total=0;
 function go(a){
 	$('.ori'+a).addClass('hidden');

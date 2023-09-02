@@ -9,19 +9,24 @@
 }
 body{
 	margin:0px;
-	padding:0px;
-	font-family: "Sehaj" !important;
-	font-size:15px !important;
+	padding:10px;
 	background-image:url('img/b1.png');
 	background-size:cover;
+	font-family: "Sehaj" !important;
+	font-size:15px !important;	
 }
 h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
 	letter-spacing:1px;
+	line-height:30px !important;
 }
 .let{
 	color:#0166B3;
+}
+.bll{
+	color:black !important;
+	font-family: "Sehaj" !important;
 }
 #welldone{
 	width:50%;
@@ -59,9 +64,6 @@ input{
 	padding:10px;
 	border:2px solid #41C2D5;
 	background:#fff;
-}
-.m2{
-	border-right:2px solid #EF59A1;
 }
 .ans{
 	font-size:30px;
@@ -109,9 +111,6 @@ input{
 }
 #submit, #reset, #sol{
 	cursor:pointer;
-}
-.container-fluid{
-	padding:10px;
 }
 .tek{
 	width:100%;

@@ -38,6 +38,9 @@ input{
 	cursor:pointer;
 	letter-spacing:3px;
 }
+.canvas{
+	border-bottom:2px dashed grey !important;
+}
 .area{
 	border-radius:0;
 	width:150px !important;

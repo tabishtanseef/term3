@@ -42,6 +42,9 @@ input{
 	border-radius:0;
 	width:150px !important;
 }
+.canvas{
+	border-bottom:2px dashed grey !important;
+}
 .hidden{
 	display:none;
 }

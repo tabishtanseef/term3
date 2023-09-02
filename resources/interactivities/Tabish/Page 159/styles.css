@@ -2,10 +2,11 @@
   font-family: "Sehaj";
   src: url('All Fonts/Sehaj-ENG-Bold.otf');
 }
-h5{
+h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj";
-	letter-spacing:1px;
+	letter-spacing:1px !important;
+	line-height: 40px !important;
 }
 .let{
 	color:#0166B3;

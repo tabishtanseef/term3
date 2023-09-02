@@ -13,9 +13,8 @@ h4{
 
 body{
 	margin:0px;
-	padding:20px;
+	padding:10px;
 	font-family: "Sehaj" !important;
-	background-image: url('img/b1.png');
 }
 .hidden{
 	display:none;

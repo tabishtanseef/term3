@@ -8,11 +8,12 @@
 }
 body{
 	margin:0px;
-	padding:20px;
+	padding:10px;
 }
 h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold" !important;
+	line-height: 40px !important;
 }
 .hidden{
 	display:none;

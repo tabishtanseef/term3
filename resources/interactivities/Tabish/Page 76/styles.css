@@ -1,4 +1,5 @@
 
+
 @font-face {
   font-family: "Sehaj";
   src: url('All Fonts/Sehaj-ENG-SemiBold.otf');
@@ -9,38 +10,35 @@
 }
 body{
 	margin:0px;
-	padding:0px;
-	font-family: "Sehaj" !important;
-	font-size:15px !important;
+	padding:10px;
 	background-image:url('img/b1.png');
 	background-size:cover;
+	font-family: "Sehaj" !important;
+	font-size:15px !important;	
 }
 h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
 	letter-spacing:1px;
+	line-height:30px !important;
 }
 .let{
 	color:#0166B3;
 }
+.bll{
+	color:black !important;
+	font-family: "Sehaj" !important;
+}
 #welldone{
 	width:50%;
 }
-#div1, #div2, #div3, #div4, #div5  {
-  width: 170px;
-  height: 60px; 
-  padding:2px;
-  display:inline-block;
-  border: 2px solid #000;
-  background:white;
-}
 .text_div{
-  display:inline-block;
-  width: 100px;
-  height: 60px; 
-  display:inline-block;
-  border: 2px solid #000;
-  background:white;
+	display:inline-block;
+	width: 100px;
+	height: 60px; 
+	display:inline-block;
+	border: 2px solid #000;
+	background:white;
 }
 .solve{
 	font-size:30px;

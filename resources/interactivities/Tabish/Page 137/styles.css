@@ -18,7 +18,7 @@ body{
 h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
-	letter-spacing:1px;
+	line-height:40px !important;
 }
 .let{
 	color:#0166B3;
@@ -53,7 +53,7 @@ h4{
 }
 input{
 	width:50px;
-	border:4px solid #FECA0A;
+	border:3px solid #FECA0A;
 	font-size:28px !important;
 	text-align:center;
 	cursor:pointer;
@@ -113,6 +113,6 @@ input{
 }
 .tek{
 	width:90%;
-	border:5px solid #FECA0A;
+	border:3px dashed #FECA0A;
 	border-radius:20px;
 }

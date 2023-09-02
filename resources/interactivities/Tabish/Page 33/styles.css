@@ -21,7 +21,9 @@ h4{
 .let{
 	color:#0166B3;
 }
-
+.col-md-2{
+	text-align:center;
+}
 .mains{
 	height:500px;
 	background-image:url(img/00.png);
@@ -77,13 +79,8 @@ input{
 	margin-top:25px;
 	margin-left:12px;
 }
-.ques_imageL{
+.ques_image{
 	width:70%;
-	margin-left:30px;
-}
-.ques_imageR{
-	width:70%;
-	margin-left:-50px;
 }
 .hidden{
 	display:none !important;

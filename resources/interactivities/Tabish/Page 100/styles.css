@@ -20,7 +20,7 @@ h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
 	letter-spacing:1px;
-	margin-top:10px !important;
+	line-height:35px !important;
 }
 .let{
 	color:#0166B3;
@@ -115,9 +115,6 @@ input{
 }
 #submit, #reset, #sol{
 	cursor:pointer;
-}
-.container-fluid{
-	padding:20px;
 }
 .teki{
 	width:60%;

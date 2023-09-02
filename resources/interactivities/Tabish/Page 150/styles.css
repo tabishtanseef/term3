@@ -1,14 +1,22 @@
 @font-face {
-  font-family: "Sehaj";
+  font-family: "Sehaj Bold";
   src: url('All Fonts/Sehaj-ENG-Bold.otf');
 }
-h5{
+@font-face {
+  font-family: "Sehaj";
+  src: url('All Fonts/Sehaj-ENG-SemiBold.otf');
+}
+h4{
 	color:#C529A3 !important;
-	font-family: "Sehaj";
-	letter-spacing:1px;
+	font-family: "Sehaj Bold";
+	line-height:40px !important;
 }
 .let{
 	color:#0166B3;
+}
+.bll{
+	font-family: "Sehaj";
+	color:black;
 }
 body{
 	margin:0px;

@@ -20,9 +20,14 @@ h5{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
 	letter-spacing:1px;
+	line-height:30px !important;
 }
 .let{
 	color:#0166B3;
+}
+.bll{
+	color:black !important;
+	font-family: "Sehaj" !important;
 }
 #welldone{
 	width:50%;
@@ -115,9 +120,6 @@ input{
 }
 #submit, #reset, #sol{
 	cursor:pointer;
-}
-.container-fluid{
-	padding:20px;
 }
 .tek{
 	width:80%;

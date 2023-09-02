@@ -13,17 +13,21 @@ body{
 	background-image:url('img/b1.png');
 	background-size:cover;
 	font-family: "Sehaj" !important;
-	font-size:30px !important;
+	font-size:30px !important;	
 }
 h4{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
 	letter-spacing:1px;
+	line-height:40px !important;
 }
 .let{
 	color:#0166B3;
 }
-
+.bll{
+	color:black !important;
+	font-family: "Sehaj" !important;
+}
 .mains{
 	height:500px;
 	background-image:url(img/00.png);
@@ -108,9 +112,6 @@ input{
 }
 #submit, #reset, #sol{
 	cursor:pointer;
-}
-.container-fluid{
-	padding:20px;
 }
 .tek{
 	width:70%;

@@ -34,16 +34,16 @@ span{
 	padding:5px;
 }
 input{
-	width:100px;
+	width:80px;
 	font-size:16px !important;
 	text-align:center;
 	background:#fff;
 	border:3px solid #FECA0A;
 	border-radius:20px;
-	margin-top:10px;
+	margin-top:10px !important;
 	padding:5px;
 	cursor:pointer;
-	letter-spacing:3px;
+	letter-spacing:1px;
 }
 .hidden{
 	display:none;
@@ -56,13 +56,11 @@ input{
 	cursor:pointer;
 }
 .ques_image{
-	width:70%; 
-	margin:10px;
+	width:90%; 
 	cursor:pointer;
 }
 .answers{
 	cursor:pointer;
-	margin-top:5px;
 }
 .col-md-3{
 	text-align:center;

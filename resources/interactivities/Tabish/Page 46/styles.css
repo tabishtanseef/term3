@@ -26,9 +26,8 @@ h4{
 #welldone{
 	width:50%;
 }
-canvas{
-	box-shadow: 1px 2px 1px 2px magenta;
-	margin:20px;
+.canvas{
+	border-bottom:2px dashed grey !important;
 }
 span{
 	padding:5px;

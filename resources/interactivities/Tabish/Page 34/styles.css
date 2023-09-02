@@ -21,7 +21,9 @@ h4{
 .let{
 	color:#0166B3;
 }
-
+.col-md-2{
+	text-align:center;
+}
 .mains{
 	height:500px;
 	background-image:url(img/00.png);
