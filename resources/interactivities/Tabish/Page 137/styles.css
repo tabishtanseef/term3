@@ -107,10 +107,7 @@ input{
 }
 #submit, #reset, #sol{
 	cursor:pointer;
-}
-.container-fluid{
-	padding:20px;
-}
+}	
 .tek{
 	width:90%;
 	border:3px dashed #FECA0A;

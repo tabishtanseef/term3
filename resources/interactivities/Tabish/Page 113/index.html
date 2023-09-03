@@ -14,8 +14,8 @@
 <div class="container-fluid" >
 	<div class="row">
 		<div class="col-md-12">
-			<h4><img onclick="play(1)" src="img/speaker.png" class="speaker">Step by step<br>
-			&nbsp; &nbsp; &nbsp; Count by 2s and colour the numbers on the table.
+			<h4><img onclick="play(1)" src="img/speaker.png" class="speaker"><span style="color:#66AE3D;">Step by step</span><br>
+			&nbsp; &nbsp; &nbsp; Count by <span class="let">2s</span> and colour the numbers on the table.
 			</h4>
 		</div>
 	</div>
@@ -42,18 +42,17 @@
 <div id="blocks2" style="display:none; margin-top:-300px; z-index:99;">
 	<center><img src="img/TryAgain.gif" style="width:300px;"></center>
 </div>
-<br>
 <div class="field">
 	<div class="row">
 		<div class="col-md-12">
-			<h4>
+			<h4 style="margin-top:5px; margin-bottom:-15px;">
 				<img onclick="play(2)" src="img/speaker.png" class="speaker" >Write the numbers that you have coloured.
 			</h4>
 		</div>
 	</div>
 	<div class="row">
 		<div class="col-md-1"></div>
-		<div class="col-md-8">
+		<div class="col-md-7">
 			<img src="img/1.jpg" id="scream" class="hidden" style="width:100px;">
 			<center><canvas id="canvas" class="canvas"></canvas></center>
 		</div>

@@ -1,0 +1,105 @@
+
+@font-face {
+  font-family: "Sehaj";
+  src: url('All Fonts/Sehaj-ENG-SemiBold.otf');
+}
+@font-face {
+  font-family: "Sehaj Bold";
+  src: url('All Fonts/Sehaj-ENG-Bold.otf');
+}
+body{
+	margin:0px;
+	padding:0px;
+	font-family: "Sehaj" !important;
+	font-size:20px !important;
+}
+h4{
+	color:#C529A3 !important;
+	font-family: "Sehaj Bold";
+	letter-spacing:1px;
+}
+.let{
+	color:#0166B3;
+}
+#welldone{
+	width:50%;
+}
+input{
+	width:40px;
+	height:40px;
+	border:2px solid #FECA0A;
+	font-size:15px !important;
+	text-align:center;
+	cursor:pointer;
+	background:white;
+}
+.ans{
+	font-size:30px;
+}
+.opt{
+	width:80px !important;
+}
+.blank{
+	border:2px solid #71BF44;
+	border-radius:10px;
+	color:#71BF44;
+	background:#fff;
+	pointer-events:auto !important;
+}
+.down{
+	margin-top:25px;
+	margin-left:12px;
+}
+.ques_imageL{
+	width:70%;
+	margin-left:30px;
+}
+.ques_imageR{
+	width:70%;
+	margin-left:-50px;
+}
+.hidden{
+	display:none !important;
+}
+.speaker{
+	width:30px; 
+	height:30px; 
+	margin-right:10px;
+	margin-left:10px;
+	cursor:pointer;
+}
+#submit, #reset, #sol{
+	cursor:pointer;
+}
+.tek{
+	width:40%;
+	border-radius:20px;
+	margin-bottom:10px;
+}
+.lefty{
+	background:#EFF6E8;
+	border:3px dashed #71BF44;
+	border-radius:20px;
+}
+.righty{
+	background:#FEF9E7;
+	border:3px dashed #F58220;
+	border-radius:20px;
+}
+.tic{
+	margin-top:50px !important;
+}
+table{
+	font-size:20px;
+	text-align:center;
+}
+.box{
+	border:2px solid #71BF44;
+	border-radius:10px;
+	padding:7px;
+	margin-top:10px !important;
+	background:white;
+}
+td{
+	margin-top:30px !important;
+}

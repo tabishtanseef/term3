@@ -55,6 +55,7 @@ input{
 	cursor:pointer;
 	background:white;
 	border-radius:50%;
+	margin-bottom:5px !important;
 }
 .m1{
 	padding:10px;
@@ -113,11 +114,8 @@ input{
 #submit, #reset, #sol{
 	cursor:pointer;
 }
-.container-fluid{
-	padding:10px;
-}
 .tek{
-	width:100%;
+	width:85%;
 	border:2px solid #FECA0A;
 	border-radius:20px;
 	padding:10px;

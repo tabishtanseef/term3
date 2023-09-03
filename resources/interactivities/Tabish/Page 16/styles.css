@@ -75,7 +75,7 @@ input{
 	margin-left:12px;
 }
 .ques_image{
-	width:70%;
+	width:50%;
 }
 .ques_imageR{
 	width:100%;
@@ -101,9 +101,6 @@ input{
 }
 #submit, #reset, #sol{
 	cursor:pointer;
-}
-.container-fluid{
-	padding:20px;
 }
 .tek{
 	width:70%;

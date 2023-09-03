@@ -27,8 +27,8 @@ window.onload = function() {
   var canvas = document.getElementById("canvas");
   var ctx = canvas.getContext("2d");
   var img = document.getElementById("scream");
-  canvas.width = 610;
-  canvas.height = 680;
+  canvas.width = 540;
+  canvas.height = 610;
   ctx.drawImage(img, 10, 10);
 };
 function change_color(element){

@@ -6,13 +6,14 @@ h5{
 	color:#C529A3 !important;
 	font-family: "Sehaj";
 	letter-spacing:1px;
+	line-height:30px !important;
 }
 .let{
 	color:#0166B3;
 }
 body{
 	margin:0px;
-	padding:20px;
+	padding:0px;
 	background-image:url('img/b1.png');
 	background-size:cover;
 }

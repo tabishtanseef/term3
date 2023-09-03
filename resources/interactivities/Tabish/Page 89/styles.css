@@ -15,7 +15,7 @@ body{
 	font-family: "Sehaj" !important;
 	font-size:30px !important;
 }
-h4{
+h5{
 	color:#C529A3 !important;
 	font-family: "Sehaj Bold";
 	letter-spacing:1px;
@@ -115,5 +115,5 @@ input{
 	padding:20px;
 }
 .tek{
-	width:80%;
+	width:70%;
 }

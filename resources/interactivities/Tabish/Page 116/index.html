@@ -1,0 +1,156 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title></title>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.js" ></script>
+</head>
+<body>
+<div class="container-fluid" >
+	<div class="row">
+		<div class="col-md-12">
+			<h4><img onclick="play()" src="img/speaker.png" class="speaker"><span style="color:#66AE3D;">Skip and jump</span><br>
+			&nbsp; &nbsp; &nbsp; <span class="bll">Count by Jatin wants to play with his friends.</span><br>
+			&nbsp; &nbsp; &nbsp; Help Jatin skip count by <span class="let">2s</span> . Type to write  the missing numbers.
+			</h4>
+		</div>
+	</div>
+</div>
+<div class="container" >
+	<div class="row">
+		<div class="col-md-9" style="margin:auto;" >
+			<div class="m1">
+				<div class="row" >
+					<div class="col-md-1"  ></div>
+					<div class="col-md-2" style=" visibility:hidden;">
+						<input type="text" value="" readonly >	
+					</div>
+					<div class="col-md-2" style="margin-top:50px;" >
+						<input type="text" value="52" readonly >
+					</div>
+					<div class="col-md-2" style="margin-top:50px;" >
+						<input type="text" value="54" readonly >
+					</div>
+					<div class="col-md-2" style="margin-top:50px;">
+						<input type="text" id="tab0" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" style="margin-top:50px;" >
+						<input type="text" value="58" readonly >
+					</div>
+					<div class="col-md-1"  ></div>
+				</div>
+				<br>
+				<div class="row" style="margin-top:15px;">
+					<div class="col-md-1"  ></div>
+					<div class="col-md-2" style=" visibility:hidden;">
+						<input type="text" value="20" readonly >	
+					</div>
+					<div class="col-md-2" style=" visibility:hidden;" >
+						<input type="text" value="20" readonly >
+					</div>
+					<div class="col-md-2" style=" visibility:hidden;" >
+						<input type="text" value="20" readonly >
+					</div>
+					<div class="col-md-2" style=" visibility:hidden;" >
+						<input type="text" value="22" readonly >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" id="tab1" maxlength="2" autocomplete="off" >
+					</div>
+				</div>
+				<br>
+				<div class="row" style="margin-top:0px;">
+					<div class="col-md-1"  ></div>
+					<div class="col-md-2" >
+						<input type="text" id="tab5" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" id="tab4" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" value="66" readonly >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" id="tab3" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" id="tab2" maxlength="2" autocomplete="off" >
+					</div>
+				</div>
+				<br>
+				<div class="row" style="margin-top:0px;">
+					<div class="col-md-1"  ></div>
+					<div class="col-md-2" >
+						<input type="text" id="tab6" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" value="74" readonly >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" id="tab7" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" id="tab8" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" style=" visibility:hidden;">
+						<input type="text"  >
+					</div>
+				</div>
+				<br>
+				<div class="row" style="margin-top:5px;">
+					<div class="col-md-1"  ></div>
+					<div class="col-md-2" >
+						<input type="text" id="tab11" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" id="tab10" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" value="80" readonly >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" id="tab9" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" style=" visibility:hidden;">
+						<input type="text"  >
+					</div>
+				</div>
+				<br>
+				<div class="row" style="margin-top:5px;">
+					<div class="col-md-1"  ></div>
+					<div class="col-md-2" >
+						<input type="text" id="tab12" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" id="tab13" maxlength="2" autocomplete="off" >
+					</div>
+					<div class="col-md-2" >
+						<input type="text" value="92" readonly >
+					</div>
+				</div>
+				<br>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:50%;"></center></div>
+		<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:50%;"></center></div>
+		<div class="col-md-4"><center><img id="reset" onclick="window.location.reload()" src="img/reset.png" style="margin-top:10px; width:50%;"></center></div>
+	</div>
+</div>
+<div id="blocks" style="display:none; margin-top:-400px; z-index:99;">
+	<center><img src="img/Welldone.gif" id="welldone"></center>
+</div>
+<div id="blocks2" style="display:none; margin-top:-400px; z-index:99;">
+	<center><img src="img/TryAgain.gif" style="width:300px;"></center>
+</div>
+<audio src="audio/well-done.mp3" id="audio1"></audio>
+<audio src="audio/try-again.mp3" id="audio2"></audio>
+<audio src="audio/Page-116.mp3" id="audio3"></audio>
+</body>
+<script src="main.js"></script>
+</html>

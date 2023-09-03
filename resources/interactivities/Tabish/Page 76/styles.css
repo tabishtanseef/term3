@@ -108,11 +108,8 @@ input{
 #submit, #reset, #sol{
 	cursor:pointer;
 }
-.container-fluid{
-	padding:10px;
-}
 .tek{
-	width:100%;
+	width:90%;
 	margin-bottom:10px;
 }
 .lefty{
