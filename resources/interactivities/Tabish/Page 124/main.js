@@ -1,4 +1,4 @@
-const answers = ['legs','saucer'];
+const answers = ['2','7','27','1','31','4','4','5','2','52'];
 
 function solve() {
 	$('#submit').css("pointer-events", "none");
@@ -14,6 +14,7 @@ function solve() {
 	}
 }
 function check() {
+	
 	$('select').css('border','2px solid #73DAD6');
 	$("#sol").css("pointer-events", "auto");	
 	let size = answers.length;
@@ -34,7 +35,7 @@ function check() {
 	var correct=0;
 	while(i<size){
 		input_answer = $("#tab"+i).val();
-		if(input_answer.toLowerCase()!=answers[i]){
+		if(input_answer!=answers[i]){
 			$('#tab'+i).css("border",'2px solid red');
 		}else{
 			$('#tab'+i).css("border",'2px solid green');
@@ -55,8 +56,4 @@ function check() {
 			$('#blocks2').show(); 
 		},1000);
 	}
-} 
-function play(){
-	var audio = document.getElementById('audio3');
-	audio.play();
 }

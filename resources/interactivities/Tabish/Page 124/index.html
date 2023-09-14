@@ -1,0 +1,154 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title></title>
+	<link href="styles.css" type="text/css" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.6.3.js" ></script>
+</head>
+<body>
+<div class="container-fluid" >
+	<div class="row">
+		<div class="col-md-12">
+			<h4><img onclick="play()" src="img/speaker.png" class="speaker" ><span style="color:#66AE3D;">Pencil counts</span><br>
+				&nbsp; &nbsp; &nbsp; Count and write the correct answers.
+			</h4>
+		</div>
+	</div>
+</div>
+<div class="container" >
+	<div class="row" >
+		<div class="col-md-10" style="margin:auto;" >
+			<div class="row m2">
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/20.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/3.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="green green-b" value="2" readonly> tens</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">+</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="green green-b" value="3" readonly> one</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">=</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="green green-b" value="23" readonly></center>
+				</div>
+			</div>
+			<div class="row m1">
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/20.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/7.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="red-b" id="tab0" maxlength="2" autocomplete="off"> tens</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">+</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="red-b" id="tab1" maxlength="2" autocomplete="off"> ones</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">=</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="red-b" id="tab2" maxlength="2" autocomplete="off"></center>
+				</div>
+			</div>
+			<div class="row m2">
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/30.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/1.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="blue blue-b" value="3" readonly> ten</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">+</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="blue-b" id="tab3" maxlength="2" autocomplete="off"> ones</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">=</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="blue-b" id="tab4" maxlength="2" autocomplete="off"></center>
+				</div>
+			</div>
+			<div class="row m1">
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/40.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/4.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="orange-b" id="tab5" maxlength="2" autocomplete="off"> ten</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">+</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="orange-b" id="tab6" maxlength="2" autocomplete="off"> ones</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">=</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="orange orange-b" value="44" readonly></center>
+				</div>
+			</div>
+			<div class="row m2">
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/50.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><img src="img/2.png" class="tek"></center>
+				</div>
+				<div class="col-md-1" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;"></div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="purple-b" id="tab7" maxlength="2" autocomplete="off"> ten</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">+</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="purple-b" id="tab8" maxlength="2" autocomplete="off"> ones</center>
+				</div>
+				<div class="col-md-1" style="margin:auto;">=</div>
+				<div class="col-md-3" style="margin:auto;">
+					<center><input type="text" class="purple-b" id="tab9" maxlength="2" autocomplete="off"></center>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4"><center><img id="submit" onclick="check()" src="img/submit.png" style="margin-top:10px; width:50%;"></center></div>
+		<div class="col-md-4"><center><img id="sol" onclick="solve()" src="img/answer.png" style="margin-top:10px; width:50%;"></center></div>
+		<div class="col-md-4"><center><img id="reset" onclick="window.location.reload()" src="img/reset.png" style="margin-top:10px; width:50%;"></center></div>
+	</div>
+</div>
+<div id="blocks" style="display:none; margin-top:-400px; z-index:99;">
+	<center><img src="img/Welldone.gif" id="welldone"></center>
+</div>
+<div id="blocks2" style="display:none; margin-top:-400px; z-index:99;">
+	<center><img src="img/TryAgain.gif" style="width:300px;"></center>
+</div>
+<audio src="audio/well-done.mp3" id="audio1"></audio>
+<audio src="audio/try-again.mp3" id="audio2"></audio>
+<audio src="audio/Page-124.mp3" id="audio3"></audio>
+</body>
+<script src="main.js"></script>
+</html>
