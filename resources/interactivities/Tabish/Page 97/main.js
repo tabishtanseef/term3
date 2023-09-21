@@ -56,3 +56,8 @@ function check() {
 		},1000);
 	}
 }
+
+function play(){
+	var audio = document.getElementById('audio3');
+	audio.play();
+}

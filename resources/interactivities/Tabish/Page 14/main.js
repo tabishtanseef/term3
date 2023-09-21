@@ -92,8 +92,8 @@ function solve(){
 	$('#submit').css('pointer-events','none');
 	$('#submit').css('opacity','0.5');
 }
-function go(a,r){
-	$('.box'+r).css('pointer-events','none');
+function go(a,i){
+	$('.box'+i).css('pointer-events','none');
 	$('#'+a).css('border','2px solid #FECA0A');
 	$('#'+a).css('pointer-events','none');
 	if(a==1){
@@ -121,5 +121,5 @@ function bo(a){
 	$('#'+c).css('color','black');
 	$('#'+b).css('color','black');
 	$('#'+a).css('color','green');
-	$('#'+a).css('border','5px solid green');
+	$('#'+a).css('border','2px solid green');
 }

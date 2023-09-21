@@ -1,4 +1,4 @@
-const answers = ['4','3','5','2','1'];
+const answers = ['4','1','2','5','3'];
 
 function solve() {
 	$('#submit').css("pointer-events", "none");
@@ -55,4 +55,8 @@ function check() {
 			$('#blocks2').show(); 
 		},1000);
 	}
+}
+function play(){
+	var audio = document.getElementById('audio3');
+	audio.play();
 }

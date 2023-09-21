@@ -41,19 +41,33 @@ function solve() {
 	}
 }
 function check() {
-	if(q==1){
+	if(q==6){
 		$(".t_1").removeClass('hidden');
 		$(".c_1").addClass('hidden');
 	}else{
 		$(".c_1").removeClass('hidden');
 		$(".t_1").addClass('hidden');
 	}
-	if(t==7){
+	if(r==3){
 		$(".t_2").removeClass('hidden');
 		$(".c_2").addClass('hidden');
 	}else{
 		$(".c_2").removeClass('hidden');
 		$(".t_2").addClass('hidden');
+	}
+	if(s==5){
+		$(".t_3").removeClass('hidden');
+		$(".c_3").addClass('hidden');
+	}else{
+		$(".c_3").removeClass('hidden');
+		$(".t_3").addClass('hidden');
+	}
+	if(t==4){
+		$(".t_4").removeClass('hidden');
+		$(".c_4").addClass('hidden');
+	}else{
+		$(".c_4").removeClass('hidden');
+		$(".t_4").addClass('hidden');
 	}
 	$('select').css('border','2px solid #73DAD6');
 	$("#sol").css("pointer-events", "auto");	
@@ -96,4 +110,9 @@ function check() {
 			$('#blocks2').show(); 
 		},1000);
 	}
+}
+
+function play(){
+	var audio = document.getElementById('audio3');
+	audio.play();
 }

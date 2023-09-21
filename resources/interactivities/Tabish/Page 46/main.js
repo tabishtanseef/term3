@@ -34,7 +34,7 @@ function check() {
 	var correct=0;
 	while(i<size){
 		input_answer = $("#tab"+i).val();
-		if(input_answer.toLowerCase()!=answers[i]){
+		if(input_answer.toLowerCase()!=answers[i].toLowerCase()){
 			$('#tab'+i).css("border",'2px solid red');
 		}else{
 			$('#tab'+i).css("border",'2px solid green');
@@ -55,4 +55,9 @@ function check() {
 			$('#blocks2').show(); 
 		},1000);
 	}
+}
+
+function play(){
+	var audio = document.getElementById('audio3');
+	audio.play();
 }
